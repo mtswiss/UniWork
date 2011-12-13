@@ -1,0 +1,10 @@
+package prims;
+
+public class Node {
+	String name;
+	int value;
+	public Node(int value, String name){
+		
+	}
+	
+}

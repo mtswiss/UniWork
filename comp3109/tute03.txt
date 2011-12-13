@@ -1,0 +1,7 @@
+(defun derive-num (num var)
+0)
+
+(defun derive-sym (symbol var)
+(if (eq sym var) 1 0 ))
+
+(defun derive

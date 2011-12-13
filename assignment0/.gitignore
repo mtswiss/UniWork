@@ -1,0 +1,4 @@
+*.o
+q[123]
+Makefile.depends
+assignment*.pdf

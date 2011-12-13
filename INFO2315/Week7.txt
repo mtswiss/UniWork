@@ -1,0 +1,25 @@
+1. What are Joe's security expectations for this system?
+
+Joe expects that by downloading by truste sites he will be safe. He is wrong about that, even though the software
+he uses to download other applications and softwares are safe, he can not be 100% sure that his downloads
+are malware-safe. He also makes the decision to install only things from a CD. His assumption is that ".exe" files
+downloaded from the net contains virus. He howere doesn't take into consideration that on the CD he has there might
+be a malware that infiltrates the computer when he executes the ".exe" from the CD. Using Internet Explorer 6 is
+not safe. There are later versions However, Joe needs to make sure that when he does make banking and other 
+transactions on the web that the website is secure (a small lock at the bottom of the page). 
+Microsoft Word/Excel docs with macros might not be safe. Macro is like an excutable program. 
+
+
+2. Ways that Joe's system could be infected with some form of malware. 
+
+By installing a CD with a piece of malware on it, Joe's system could get infected. 
+
+
+3. Protective measures Joe could take to limit the risk. 
+
+Scan through every CD he inserts into his computer with an anti-virus. 
+Use last updated version.
+
+
+4, The limitations of these measures. 
+

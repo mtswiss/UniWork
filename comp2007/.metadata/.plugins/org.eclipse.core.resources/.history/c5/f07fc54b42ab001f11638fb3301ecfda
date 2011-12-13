@@ -1,0 +1,14 @@
+package prims;
+
+public class Node implements Comparable<Node>{
+	String name;
+	int value;
+	public Node(int value, String name){
+		this.value = value;
+		this.name = name;
+	}
+	
+	abstact int compareTo(){
+		
+	}
+}

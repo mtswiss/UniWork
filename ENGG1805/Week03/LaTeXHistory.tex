@@ -1,0 +1,97 @@
+\documentclass{Letter}
+\begin{document}
+\title{\LaTeX: a brief introduction}
+\author{G J Kennedy} 
+
+\maketitle
+
+LaTeX is a powerful typesetting system, used for producing scientific and mathematical documents of high typographic quality. It differs from WYSIWYG\footnote{``what you see is what you get''} tools such as FrameMaker and Word in three important ways:
+
+\begin{enumerate}
+\item you can use any text editor to create document files
+\item formatting is achieved by means of commands embedded in the ext
+\item you have to `compile' a document before you can view it.
+\end{enumerate}
+
+LaTeX is open source and very stable. It is available for most platforms, from low-specification PCs and Macs to powerful UNIX and VMS systems. 
+
+\section {History}
+Donald E Knuth designed a new typesetting program that he called TeX in about 1978. TeX has been revised continuously over the years, the most recent release being in 2002.\\
+LaTeX is a macro package using TeX as its formatting engine that allows authors to use TeX more easily. The word LaTeX is pronounced `lay-tech' or `lah-tech' (`ch' as in Scottish `loch' or just hard `k'), not `latex' (as in rubber).
+\section{Who uses it?}
+Although many people prefer WYSIWYG word processors because of their obvious ease of use, LaTeX is preferred by many authors because it produces documents that are very consistent and well formatted using specified layouts. It is especially good where complex mathematical formulae and equations are involved.\\ 
+Some publishers such as the ACM, Elsevier, IEEE and Kluwer have very strict guidelines for authors. The exact typography required is defined in the LaTeX `document classes' acmconf, elsart, IEEEconf and kluwer respectively. The correct layout for each publisher can be achieved simply by specifying the appropriate document class.  Should the author wish to submit the same article to a different publisher, it is simply a matter of choosing the appropriate document class. LaTeX ensures that the new layout meets the publishers' requirements.
+
+\section{Basic concepts}
+The main idea of LaTeX is that it allows the author to concentrate on the content of an article without having to worry about the final appearance. The author defines the basic structure of the document using formatting commands, and then the document is compiled to produce the required output. The typography and layout of the output are determined by the LaTeX document class specified. It is somewhat analogous to using a markup language such as HTML to format web pages. However, LaTeX is oriented towards printed page layout and guarantees perfect typography, at the same time preserving flexibility.\\
+When a text document is compiled, LaTeX produces a device-independent file (DVI). Using a viewing utility, such as Yap, the appearance of final output can be viewed. Like all computing tools, LaTeX is very fussy, and even a trivial mistake in the formatting commands can mean that no output is generated and many error messages are displayed. You then have to check the error log to find the error and correct it before recompiling the document.
+
+\section {A sample document}
+As stated already, a document is contained in a plain text file with the suffix .tex. A simple example is given below.
+
+\begin{verbatim}
+	\documentclass{article}
+	\begin{document}
+	\title{A Latex Document}
+	\author{G J Kennedy} 
+	\maketitle
+	The text of the document
+	goes here.
+	\end{document}
+\end{verbatim}
+
+This text file defines a short document which  can be  compiled using  LaTeX to produce the desired output. Notice that there are no  spelling check facilities.
+Also notice that each LaTeX command begins with a backslash, so this character has special meaning and can never be used simply as a character. The first line specifies the type of document. There are various standard classes, such as `article', `book' and `letter', with pre-defined features that can be customised. The third line begins the body of the document. The command $\backslash$maketitle causes the title, defined above to be printed.\\
+If this text is saved to a text file with the name doc1.tex, say, then using a \textit{cmd} window it can be compiled with the command \textit{latex doc1}. If there are no errors, the output file \textit{doc1.dvi} will be produced. The final output can then be viewed by double clicking on the .dvi file.
+
+
+\section{Working with mathematical formulae}
+The real power of LaTeX is best demonstrated when it is used to produce mathematical output. The following simple examples show this.
+\subsection{Algebra}
+\begin{displaymath}
+ax^2+bx+c=0
+\end{displaymath}
+\begin{displaymath}
+x=\pm\sqrt{\frac{b^2-4ac}{2a}}
+\end{displaymath}
+\subsection{Calculus}
+\begin{displaymath}
+\lim_{n \to \infty}
+\sum_{k=1}^n \frac{1}{k^2} =
+\frac{\pi^2}{6}
+\end{displaymath}
+\begin{displaymath}
+A = ab\int_{0}^{\pi/2} \sin^2 t~dt
+\end{displaymath}
+\subsection{Matrices}
+\begin{displaymath}
+\mathbf{A} = 
+\left( 
+\begin{array}{cc}
+a_{11} & a_{12} \\
+a_{21} & a_{22}
+\end{array} 
+\right) 
+\end{displaymath}
+
+\section{Some examples of \LaTeX commands}
+The following table contains some common LaTeX commands that can be used with most LaTeX classes.\\
+
+\begin{tabular}{ll}
+LaTeX Command & Meaning\\
+\hline
+$\backslash$documentclass & Document class used\\
+$\backslash$title & Title definition follows\\
+$\backslash$maketitle & Title to be printed here\\
+$\backslash$section & New section\\
+$\backslash$subsection & New subsection\\
+$\backslash$verbatim & To be printed verbatim\\
+$\backslash$displaymath & Maths formulae follow\\
+\end{tabular}
+
+\section {Obtaining more information}
+LaTeX is far more powerful and far more complex than this simple introduction. More information can be found in \textit{The Not So Short Introduction to LaTeX2e} (Tobias Oetiker, 2003). There are many other sources. 
+
+\end{document}
+
+

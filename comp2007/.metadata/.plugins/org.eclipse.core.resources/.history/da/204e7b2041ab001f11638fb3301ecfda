@@ -1,0 +1,10 @@
+package prims;
+
+public class Node {
+
+	int value;
+	public Node(int x){
+		
+	}
+	
+}

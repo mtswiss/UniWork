@@ -1,0 +1,35 @@
+(setq attributes (list 's-eq 's-le 's-ge 's-leq 's-geq 's-diff))
+
+
+(defun base_case (query)
+	(if (find (first query) attributes)
+	(second query) nil))
+
+(defun 2nd_case (query)
+	(if (equal (first query) 's-not)
+	(third query) (nil)))
+
+(defun 3rd_case (query)
+	(if (find (first query) '(s-nand s-xor)
+	((setq case3 (list (3rd_case(second query) 3rd_case (third query)) nil)
+
+
+
+(defun find-columns (query)
+	(
+	if (find (first query) attributes)
+	(second query)
+	
+		(
+		if (equal (first query) 's-not)
+		(find-columns(third query))
+			
+
+			(
+			if (find (first query) '(s-nand s-xor)
+			((setq case3 (list (find-columns(second query) 
+			(find-columns(third query))))
+			nil)))
+
+)
+			

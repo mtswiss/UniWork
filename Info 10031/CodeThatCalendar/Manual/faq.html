@@ -1,0 +1,317 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<title>:: JavaScript calendar implemented in order to provide users with an easy yet visual way to select date and/or time in web forms and applications ::</title>
+<meta http-equiv="content-language" content=en>
+<meta name=robots content="INDEX, FOLLOW">
+<meta http-equiv=keywords content="javascript calendar, free, free javascript calendar, cross-browser, html, xml, css, date, time, form, web form">
+<meta http-equiv=description content="JavaScript calendar implemented in order to provide users with an easy yet visual way to select date and/or time in web forms and applications">
+<meta http-equiv=expires content="Mon, 01 Jan 1990 00:00:00 GMT">
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv=pragma content="no-cache">
+<meta name="revisit-after" content="1 day">
+<meta http-equiv="content-script-type" content="text/javascript">
+<link rel=stylesheet type="text/css" href="s.css">
+
+<script language=javascript src="own.js"></script></head>
+<body leftmargin=0 topmargin=0 marginwidth=0 marginheight=0 bgcolor=#FFFFFF>
+<table width=768 border=0 cellpadding=0 cellspacing=0>
+<tr>
+<td><div style="position:absolute;left:496;top:154;z-index:1"><img src="img/mm.gif" width=2 height=10></div><img src="img/s.gif" width=1 height=2></td>
+</tr><tr>
+<td><table width=768 height=42 border=0 cellpadding=0 cellspacing=0 class=ct13>
+	<tr>
+	<td><img src="img/s.gif" width=20 height=1></td>
+	<td valign=middle><p class=cp18><nobr><font class=ca8>User Manual <br><a href="../index.html" class="ca9"><font class="cf6">S</font>amples</a></font></nobr></p></td>
+	<td width=8%><img src="img/s.gif" width=1 height=1></td>
+	<td valign=middle><p class=cp18><a class=ca9 href="index.html"><font class=cf6>In</font>troduction</a></p>
+
+	<p class=cp18><nobr><a class=ca9 href="calendar_data.html"><font class=cf6>G</font>eneration from the DB</a></nobr></p></td>
+
+	<td width=14%><img src="img/s.gif" width=1 height=1></td>
+	<td valign=middle><p class=cp18><nobr><font class=ca8>On-line Builder</font></nobr></p></td>
+	<td width=8%><img src="img/s.gif" width=1 height=1></td>
+	<td valign=middle>
+	
+	<p class=cp18><a class=ca9 href="http://codethat.com/calendar/ctcalendarpro_builder.html"><font class=cf6>P</font>RO</a></p>
+
+
+	<p class=cp18><a class=ca9 href="../Builder/ctcalendarstd_builder.html"><font class=cf6>S</font>TD</a></p>
+
+	</td>
+	<td width=15%><img src="img/s.gif" width=1 height=1></td>
+	<td valign=middle><p class=cp18><nobr><a class=ca8 href="userguide.html"><font class=cf7>1</font>23Guide</a></nobr></p></td>
+	<td width=8%><img src="img/s.gif" width=1 height=1></td>
+
+	
+	<td valign=middle><p class=cp18><nobr><a class=ca8 href="http://codethat.com/sales.html"><font class=cf7>O</font>rder PRO <br>Now</a></nobr></p></td>	
+	<td width=8%><img src="img/s.gif" width=1 height=1></td>
+
+	
+	<td valign=middle><p class=cp18><nobr><a class=ca8 href="faq.html"><font class=cf7>F</font>AQ</a></nobr></p></td>
+	<td width=15%><img src="img/s.gif" width=1 height=1></td>
+	</tr>
+</table></td>
+</tr><tr>
+<td><img src="img/s.gif" width=1 height=2></td>
+</tr>
+<tr>
+<td class=ct12><table width=768 height=30 border=0 cellpadding=0 cellspacing=0>
+	<tr><td valign=middle><p class=cp9>CODETHATCALENDAR FAQ</p></td></tr>
+</table></td>
+</tr><tr>
+<td>
+
+<p class=cp10><font class=cf5>Questions List</font></p>
+<p class=cp19><img src="img/ad.gif" width=11 height=7><a class=ca4 href="faq.html#1">Is it possible to use caledar with European dates? The examples code is set with MM/dd/yyyy format, I would like to use DDDD, MMMM DD, YYYY.</a></p>
+<p class=cp19><img src="img/ad.gif" width=11 height=7><a class=ca4 href="faq.html#2">I tried to place the nescessary files (codethatcalendarstd.js, scroller_ex.js and codethatcalendar.html) in a special folder because my intention was to reuse these files for all the webpages containing html-forms with date fields. But I could not get this to work. So my question is: Do these 3 files have to exist in all folders in which I want to use the calendar?</a></p>
+<p class=cp19><img src="img/ad.gif" width=11 height=7><a class=ca4 href="faq.html#3">Could you post an example of putting the calendar in a layer? How do you set the transparency?</a></p>
+<p class=cp19><img src="img/ad.gif" width=11 height=7><a class=ca4 href="faq.html#4">I have the pro version. I purchased for inline capability, but notice there is no navigation (month, year). Can navigation be added to inline mode?</a></p>
+<p class=cp19><img src="img/ad.gif" width=11 height=7><a class=ca4 href="faq.html#5">Is it possible to have only certain days available. i.e just Saturday nights for the whole year.</a></p>
+<p class=cp19><img src="img/ad.gif" width=11 height=7><a class=ca4 href="faq.html#6">Is it possible to use a small picture instead the ... button?</a></p>
+<p class=cp19><img src="img/ad.gif" width=11 height=7><a class=ca4 href="faq.html#7">Is it possible to set min/max date on the calendar?</a></p>
+<p class=cp19><img src="img/ad.gif" width=11 height=7><a class=ca4 href="faq.html#8">I have a calendar, but I want that to choose some days, I can add to one cookie.</a></p>
+<p class=cp19><img src="img/ad.gif" width=11 height=7><a class=ca4 href="faq.html#9">When I click on any of the buttons - nothing happens.....there is no movement nor is the selected date put in the text box - any ideas; Does the .js file need to be in the Scripts folder?</a></p>
+<p class=cp19><img src="img/ad.gif" width=11 height=7><a class=ca4 href="faq.html#10">Is there a way to assign custom events as a reaction to selecting the particular date? Like user clicks on say Oct 15th and my custom code being executed?</a></p>
+
+<p class=cp10><font class=cf5>Answers</font></p>
+
+<p class=cp10><a name=#1></a><font class=cf4>Is it possible to use caledar with European dates? The examples code is set with MM/dd/yyyy format, I would like to use DDDD, MMMM DD, YYYY.</font></p>
+<p class=cp10>You should change the "dtype" property of calendar configuration.</p>
+<p class=cp10>For example you can use</p>
+
+<pre class=cc1>
+<font class=cc6>"dtype:'dd/MM/yyyy',"</font>
+</pre>
+
+<p class=cp10>Here is the full sample configuration for the calendar with european dates:</p>
+
+<pre class=cc1>
+<font class=cc3><font class=cc5>var</font> caldef2 <font class=cc2>=</font> <font class=cc7>{</font>
+	firstday <font class=cc2>:</font> <font class=cc4>0</font><font class=cc2>,</font>
+	dtype <font class=cc2>:</font></font> <font class=cc6>'dd/MM/yyyy'</font><font class=cc3><font class=cc2>,</font>
+	width <font class=cc2>:</font> <font class=cc4>250</font><font class=cc2>,</font>
+	windoww <font class=cc2>:</font> <font class=cc4>300</font><font class=cc2>,</font>
+	windowh <font class=cc2>:</font> <font class=cc4>170</font><font class=cc2>,</font>
+	border_width <font class=cc2>:</font> <font class=cc4>1</font><font class=cc2>,</font>
+	border_color <font class=cc2>:</font></font> <font class=cc6>'#ffffff'</font><font class=cc3><font class=cc2>,</font>
+	dn_css <font class=cc2>:</font></font> <font class=cc6>'clsDayName'</font><font class=cc3><font class=cc2>,</font>
+	cd_css <font class=cc2>:</font></font> <font class=cc6>'clsCurrentDay'</font><font class=cc3><font class=cc2>,</font>
+	wd_css <font class=cc2>:</font></font> <font class=cc6>'clsWorkDay'</font><font class=cc3><font class=cc2>,</font>
+	tw_css <font class=cc2>:</font></font> <font class=cc6>'clsWorkDay'</font><font class=cc3><font class=cc2>,</font>
+	we_css <font class=cc2>:</font></font> <font class=cc6>'clsWeekEnd'</font><font class=cc3><font class=cc2>,</font>
+	wdom_css <font class=cc2>:</font></font> <font class=cc6>'clsWorkDayOtherMonth'</font><font class=cc3><font class=cc2>,</font>
+	weom_css <font class=cc2>:</font></font> <font class=cc6>'clsWeekEndOtherMonth'</font><font class=cc3><font class=cc2>,</font>
+	headerstyle <font class=cc2>:</font> <font class=cc7>{</font>
+		type <font class=cc2>:</font></font> <font class=cc6>"comboboxes"</font><font class=cc3><font class=cc2>,</font>
+		css <font class=cc2>:</font></font> <font class=cc6>'clsWorkDayOtherMonth'</font><font class=cc3><font class=cc2>,</font>
+		yearrange <font class=cc2>:</font> <font class=cc8>[</font><font class=cc4>1987</font><font class=cc2>,</font> <font class=cc4>2005</font><font class=cc8>]</font>
+	<font class=cc7>}</font><font class=cc2>,</font>
+	monthnames <font class=cc2>:</font> <font class=cc8>[</font></font><font class=cc6>"January"</font><font class=cc2>,</font> <font class=cc6>"February"</font><font class=cc2>,</font> <font class=cc6>"March"</font><font class=cc2>,</font> <font class=cc6>"April"</font><font class=cc2>,</font> <font class=cc6>"May"</font><font class=cc2>,</font> <font class=cc6>"June"</font><font class=cc2>,</font>
+		<font class=cc6>"July"</font><font class=cc2>,</font> <font class=cc6>"August"</font><font class=cc2>,</font> <font class=cc6>"September"</font><font class=cc2>,</font> <font class=cc6>"October"</font><font class=cc2>,</font> <font class=cc6>"November"</font><font class=cc2>,</font> <font class=cc6>"December"</font><font class=cc3><font class=cc8>]</font><font class=cc2>,</font>
+	daynames <font class=cc2>:</font> <font class=cc8>[</font></font><font class=cc6>"Su"</font><font class=cc2>,</font> <font class=cc6>"Mo"</font><font class=cc2>,</font> <font class=cc6>"Tu"</font><font class=cc2>,</font> <font class=cc6>"We"</font><font class=cc2>,</font> <font class=cc6>"Th"</font><font class=cc2>,</font> <font class=cc6>"Fr"</font><font class=cc2>,</font> <font class=cc6>"Sa"</font><font class=cc8>]</font>
+<font class=cc7>}</font><font class=cc2>;</font> 
+</pre>
+
+<p class=cp10><a name=#2></a><font class=cf4>I tried to place the nescessary files (codethatcalendarstd.js, scroller_ex.js and codethatcalendar.html) in a special folder because my intention was to reuse these files for all the webpages containing html-forms with date fields. But I could not get this to work. So my question is: Do these 3 files have to exist in all folders in which I want to use the calendar?</font></p>
+<p class=cp10>1. The thing is that you didn't change the <font class=cc4>&lt;<font class=cc3>script</font>&gt;</font> tags in your html files. Look for the strings that look like this in your html file:</p>
+
+<pre class=cc1>
+<font class=cc4>&lt;</font><font class=cc3>script language="javascript" src="../Scripts/codethatcalendarstd.js"</font><font class=cc4>&gt;</font><font class=cc4>&lt;</font><font class=cc5>/</font><font class=cc3>script</font><font class=cc4>&gt; 
+&lt;</font><font class=cc3>script language="javascript" src="scroller_ex.js"</font><font class=cc4>&gt;</font><font class=cc4>&lt;</font><font class=cc5>/</font><font class=cc3>script</font><font class=cc4>&gt;</font>
+</pre>
+
+<p class=cp10>The "src" attribute should point to the paths of the scripts</p>
+<p class=cp10>Also don't forget to change the "src" attribute of <font class=cc4>&lt;<font class=cc3>script</font>&gt;</font> tag in codethatcalendar.html</p>
+<p class=cp10>2.You have to use the forward slash (/) in case you have your html files running on a webserver. The "/" points to the root directory of a webserver.</p>
+<p class=cp10>3. At line "codethatcalendarstd.js" line 21 char 3210 there is a window.open("codethatcalendar.html") command.</p>
+
+<p class=cp10><a name=#3></a><font class=cf4>Could you post an example of putting the calendar in a layer? How do you set the transparency?</font></p>
+<p class=cp10>You can use the inline functionality for putting calendar in a layer.</p>
+<p class=cp10>Here is the sample code:</p>
+
+<pre class=cc1>
+<font class=cc4>&lt;</font><font class=cc3>html</font><font class=cc4>&gt;&lt;</font><font class=cc3>head</font><font class=cc4>&gt;&lt;</font><font class=cc3>title</font><font class=cc4>&gt;</font>CodeThatCalendar<font class=cc4>&lt;</font><font class=cc5>/</font><font class=cc3>title</font><font class=cc4>&gt;
+&lt;</font><font class=cc3>link href="ctc.css" rel="stylesheet" type="text/css"</font><font class=cc4>&gt;
+&lt;</font><font class=cc3>script language="javascript" src="../Scripts/codethatcalendarstd.js"</font><font class=cc4>&gt;</font>
+<font class=cc4>&lt;</font><font class=cc5>/</font><font class=cc3>script</font><font class=cc4>&gt;
+ &lt;</font><font class=cc3>script language="javascript1.2"</font><font class=cc4>&gt;
+&lt;!--</font>
+
+<font class=cc3><font class=cc5>var</font> params <font class=cc2>=</font> <font class=cc7>{</font>
+	firstday <font class=cc2>:</font> <font class=cc4>0</font><font class=cc2>,</font> dtype <font class=cc2>:</font></font> <font class=cc6>' MM/dd/yyyy  '</font><font class=cc3><font class=cc2>,</font> width <font class=cc2>:</font> <font class=cc4>275</font><font class=cc2>,</font>
+	windoww <font class=cc2>:</font> <font class=cc4>300</font><font class=cc2>,</font> windowh <font class=cc2>:</font> <font class=cc4>200</font><font class=cc2>,</font> border_width <font class=cc2>:</font> <font class=cc4>0</font><font class=cc2>,</font>
+	border_color <font class=cc2>:</font></font> <font class=cc6>' Black '</font><font class=cc3><font class=cc2>,</font>
+	dn_css <font class=cc2>:</font></font> <font class=cc6>'clsDayName'</font><font class=cc3><font class=cc2>,</font> cd_css <font class=cc2>:</font></font> <font class=cc6>'clsCurrentDay'</font><font class=cc3><font class=cc2>,</font>
+	tw_css <font class=cc2>:</font></font> <font class=cc6>'clsCurrentWeek'</font><font class=cc3><font class=cc2>,</font> wd_css <font class=cc2>:</font></font> <font class=cc6>'clsWorkDay'</font><font class=cc3><font class=cc2>,</font>
+	we_css <font class=cc2>:</font></font> <font class=cc6>'clsWeekEnd'</font><font class=cc3><font class=cc2>,</font> wdom_css <font class=cc2>:</font></font> <font class=cc6>'clsWorkDayOtherMonth'</font><font class=cc3><font class=cc2>,</font>
+	weom_css <font class=cc2>:</font></font> <font class=cc6>'clsWeekEndOtherMonth'</font><font class=cc3><font class=cc2>,</font>
+	headerstyle <font class=cc2>:</font> <font class=cc7>{</font>
+		type <font class=cc2>:</font></font> <font class=cc6>"buttons"</font><font class=cc3><font class=cc2>,</font> css <font class=cc2>:</font></font> <font class=cc6>'clsDayName'</font>
+	<font class=cc3><font class=cc7>}</font><font class=cc2>,</font>
+	monthnames <font class=cc2>:</font> <font class=cc8>[</font></font><font class=cc6>"January"</font><font class=cc2>,</font> <font class=cc6>"February"</font><font class=cc2>,</font> <font class=cc6>"March"</font><font class=cc2>,</font> <font class=cc6>"April"</font><font class=cc2>,</font> <font class=cc6>"May"</font><font class=cc2>,</font> <font class=cc6>"June"</font><font class=cc2>,</font>
+		<font class=cc6>"July"</font><font class=cc2>,</font> <font class=cc6>"August"</font><font class=cc2>,</font> <font class=cc6>"September"</font><font class=cc2>,</font> <font class=cc6>"October"</font><font class=cc2>,</font> <font class=cc6>"November"</font><font class=cc2>,</font> <font class=cc6>"December"</font><font class=cc3><font class=cc8>]</font><font class=cc2>,</font>
+	daynames <font class=cc2>:</font> <font class=cc8>[</font></font><font class=cc6>"Su"</font><font class=cc2>,</font> <font class=cc6>"Mo"</font><font class=cc2>,</font> <font class=cc6>"Tu"</font><font class=cc2>,</font> <font class=cc6>"We"</font><font class=cc2>,</font> <font class=cc6>"Th"</font><font class=cc2>,</font> <font class=cc6>"Fr"</font><font class=cc2>,</font> <font class=cc6>"Sa"</font><font class=cc3><font class=cc8>]</font>
+<font class=cc7>}</font><font class=cc2>;</font>
+
+<font class=cc5>function</font> show<font class=cc2>(</font>id<font class=cc2>)</font>
+<font class=cc7>{</font>
+	<font class=cc5>var</font> c1 <font class=cc2>=</font> <font class=cc5>new</font> CodeThatCalendar<font class=cc2>(</font>params<font class=cc2>);</font>
+	c1<font class=cc2>.</font>create<font class=cc2>(</font>document<font class=cc2>,</font> id<font class=cc2>);</font>
+<font class=cc7>}</font></font>
+
+//-->
+<font class=cc4>&lt;</font><font class=cc5>/</font><font class=cc3>script</font><font class=cc4>&gt;
+&lt;</font><font class=cc5>/</font><font class=cc3>head</font><font class=cc4>&gt;
+&lt;</font><font class=cc3>body</font><font class=cc4>&gt;
+&lt;</font><font class=cc3>form</font><font class=cc4>&gt;&lt;</font><font class=cc3>input name="id3" </font><font class=cc4>&gt;&lt;</font><font class=cc5>/</font><font class=cc3>form</font><font class=cc4>&gt; 
+&lt;</font><font class=cc3>script language="javascript1.2"</font><font class=cc4>&gt;
+&lt;!--</font>
+
+<font class=cc3>show<font class=cc2>(</font></font><font class=cc6>'id3'</font><font class=cc2>);</font> 
+
+//-->
+<font class=cc4>&lt;</font><font class=cc5>/</font><font class=cc3>script</font><font class=cc4>&gt; 
+&lt;</font><font class=cc5>/</font><font class=cc3>body</font><font class=cc4>&gt;&lt;</font><font class=cc5>/</font><font class=cc3>html</font><font class=cc4>&gt;</font>
+</pre>
+
+<p class=cp10>Transparency example you can see <a class=ca5 href="index.html#opacity">here</a>.</p>
+
+<p class=cp10><a name=#4></a><font class=cf4>I have the pro version. I purchased for inline capability, but notice there is no navigation (month, year). Can navigation be added to inline mode?</font></p>
+<p class=cp10>You can use iframe mode this functionality.</p>
+<p class=cp10>Here's sample code:</p>
+
+<pre class=cc1>
+<font class=cc4>&lt;</font><font class=cc3>html</font><font class=cc4>&gt;
+&lt;</font><font class=cc3>head</font><font class=cc4>&gt; 
+	&lt;</font><font class=cc3>META http-equiv="Content-Type" content="text/html; charset=iso-8859-1"</font><font class=cc4>&gt; 
+&lt;</font><font class=cc5>/</font><font class=cc3>head</font><font class=cc4>&gt; 
+&lt;</font><font class=cc3>script language="javascript" src="../Scripts/codethatcalendarpro.js"</font><font class=cc4>&gt;</font><font class=cc4>&lt;</font><font class=cc5>/</font><font class=cc3>script</font><font class=cc4>&gt; 
+&lt;</font><font class=cc3>script language="javascript1.2"</font><font class=cc4>&gt;
+&lt;!--</font>
+
+<font class=cc3><font class=cc5>var</font> caldef1 <font class=cc2>=</font> <font class=cc7>{</font>
+	firstday <font class=cc2>:</font> <font class=cc4>0</font><font class=cc2>,</font>
+	dtype <font class=cc2>:</font></font> <font class=cc6>'MM/dd/yyyy'</font><font class=cc3><font class=cc2>,</font>
+	width <font class=cc2>:</font> <font class=cc4>250</font><font class=cc2>,</font>
+	windoww <font class=cc2>:</font> <font class=cc4>300</font><font class=cc2>,</font>
+	windowh <font class=cc2>:</font> <font class=cc4>200</font><font class=cc2>,</font>
+	border_width <font class=cc2>:</font> <font class=cc4>0</font><font class=cc2>,</font>
+	border_color <font class=cc2>:</font></font> <font class=cc6>'#0000d3'</font><font class=cc3><font class=cc2>,</font>
+	dn_css <font class=cc2>:</font></font> <font class=cc6>'clsDayName'</font><font class=cc3><font class=cc2>,</font>
+	cd_css <font class=cc2>:</font></font> <font class=cc6>'clsCurrentDay'</font><font class=cc3><font class=cc2>,</font>
+	tw_css <font class=cc2>:</font></font> <font class=cc6>'clsCurrentWeek'</font><font class=cc3><font class=cc2>,</font>
+	wd_css <font class=cc2>:</font></font> <font class=cc6>'clsWorkDay'</font><font class=cc3><font class=cc2>,</font>
+	we_css <font class=cc2>:</font></font> <font class=cc6>'clsWeekEnd'</font><font class=cc3><font class=cc2>,</font>
+	wdom_css <font class=cc2>:</font></font> <font class=cc6>'clsWorkDayOtherMonth'</font><font class=cc3><font class=cc2>,</font>
+	weom_css <font class=cc2>:</font></font> <font class=cc6>'clsWeekEndOtherMonth'</font><font class=cc3><font class=cc2>,</font>
+	headerstyle <font class=cc2>:</font> <font class=cc7>{</font>
+		type <font class=cc2>:</font></font> <font class=cc6>"comboboxes"</font><font class=cc3><font class=cc2>,</font>
+		css <font class=cc2>:</font></font> <font class=cc6>'clsWorkDayOtherMonth'</font><font class=cc3><font class=cc2>,</font>
+		yearrange <font class=cc2>:</font> <font class=cc8>[</font><font class=cc4>1987</font><font class=cc2>,</font> <font class=cc4>2005</font><font class=cc8>]</font>
+	<font class=cc7>}</font><font class=cc2>,</font>
+	monthnames <font class=cc2>:</font> <font class=cc8>[</font></font><font class=cc6>"January"</font><font class=cc2>,</font> <font class=cc6>"February"</font><font class=cc2>,</font> <font class=cc6>"March"</font><font class=cc2>,</font> <font class=cc6>"April"</font><font class=cc2>,</font> <font class=cc6>"May"</font><font class=cc2>,</font> <font class=cc6>"June"</font><font class=cc2>,</font>
+		<font class=cc6>"July"</font><font class=cc2>,</font> <font class=cc6>"August"</font><font class=cc2>,</font> <font class=cc6>"September"</font><font class=cc2>,</font> <font class=cc6>"October"</font><font class=cc2>,</font> <font class=cc6>"November"</font><font class=cc2>,</font> <font class=cc6>"December"</font><font class=cc8>]</font><font class=cc2>,</font>
+	// Array with week day names
+	<font class=cc3>daynames <font class=cc2>:</font> <font class=cc8>[</font></font><font class=cc6>"Su"</font><font class=cc2>,</font> <font class=cc6>"Mo"</font><font class=cc2>,</font> <font class=cc6>"Tu"</font><font class=cc2>,</font> <font class=cc6>"We"</font><font class=cc2>,</font> <font class=cc6>"Th"</font><font class=cc2>,</font> <font class=cc6>"Fr"</font><font class=cc2>,</font> <font class=cc6>"Sa"</font><font class=cc3><font class=cc8>]</font>
+<font class=cc7>}</font><font class=cc2>;</font>
+
+<font class=cc5>var</font> c1 <font class=cc2>=</font> <font class=cc5>new</font> CodeThatCalendar<font class=cc2>(</font>caldef1<font class=cc2>);</font></font> 
+
+//-->
+<font class=cc4>&lt;</font><font class=cc5>/</font><font class=cc3>script</font><font class=cc4>&gt;
+&lt;</font><font class=cc3>body</font><font class=cc4>&gt;
+&lt;</font><font class=cc3>P</font><font class=cc4>&gt;</font>Month+year scrollers<font class=cc4>&lt;</font><font class=cc5>/</font><font class=cc3>P</font><font class=cc4>&gt;
+&lt;</font><font class=cc3>form</font><font class=cc4>&gt;
+	&lt;</font><font class=cc3>input name="id1" type="textarea"<font class=cc5>/</font></font><font class=cc4>&gt;
+	&lt;</font><font class=cc3>input type="button"
+	  onClick="c1.innerpopup('id1','calendar_frame');" value="..."<font class=cc5>/</font></font><font class=cc4>&gt;
+&lt;</font><font class=cc5>/</font><font class=cc3>form</font><font class=cc4>&gt;
+&lt;</font><font class=cc3>script language="javascript1.2"</font><font class=cc4>&gt;
+&lt;!--</font>
+
+// Create iframe
+<font class=cc3><font class=cc5>if</font> <font class=cc2>(</font>ua<font class=cc2>.</font>oldOpera<font class=cc2>)</font>
+	document<font class=cc2>.</font>write<font class=cc2>(</font></font><font class=cc6>"&lt;div id=\"calendar_div\"&gt;"</font><font class=cc3><font class=cc2>);</font>
+document<font class=cc2>.</font>write<font class=cc2>(</font></font><font class=cc6>"&lt;iframe id=\"calendar_frame\" name=\"calendar_frame\""</font><font class=cc3><font class=cc2>);</font>
+document<font class=cc2>.</font>write<font class=cc2>(</font></font><font class=cc6>" frameborder=\"0\""</font><font class=cc3><font class=cc2>);</font>
+document<font class=cc2>.</font>write<font class=cc2>(</font></font><font class=cc6>" scrolling=\"no\""</font><font class=cc3><font class=cc2>);</font>
+document<font class=cc2>.</font>write<font class=cc2>(</font></font><font class=cc6>" style=\"visibility:hidden;\""</font><font class=cc3><font class=cc2>);</font>
+<font class=cc5>if</font> <font class=cc2>(</font>ua<font class=cc2>.</font>oldOpera<font class=cc2>)</font>
+	document<font class=cc2>.</font>write<font class=cc2>(</font></font><font class=cc6>" src=\"codethatcalendar.html\"&gt;"</font><font class=cc3><font class=cc2>);</font>
+document<font class=cc2>.</font>write<font class=cc2>(</font></font><font class=cc6>"&lt;/iframe&gt;"</font><font class=cc3><font class=cc2>);</font>
+<font class=cc5>if</font> <font class=cc2>(</font>ua<font class=cc2>.</font>oldOpera<font class=cc2>)</font>
+	document<font class=cc2>.</font>write<font class=cc2>(</font></font><font class=cc6>"&lt;/div&gt;"</font><font class=cc2>);</font>
+
+//-->
+<font class=cc4>&lt;</font><font class=cc5>/</font><font class=cc3>script</font><font class=cc4>&gt;
+&lt;</font><font class=cc5>/</font><font class=cc3>body</font><font class=cc4>&gt;
+&lt;</font><font class=cc5>/</font><font class=cc3>html</font><font class=cc4>&gt;</font>
+</pre>
+
+<p class=cp10><a name=#5></a><font class=cf4>Is it possible to have only certain days available. i.e just Saturday nights for the whole year.</font></p>
+<p class=cp10>It is possible in pro version to highlight certain items with differnt style.</p>
+<p class=cp10>For example:</p>
+
+<pre class=cc1>
+// Add a link to a certain day
+<font class=cc3>c1<font class=cc2>.</font>setLink<font class=cc2>(</font></font><font class=cc6>"12/01/2003"</font><font class=cc2>,</font> <font class=cc6>"http://your_site.com"</font><font class=cc2>);</font>
+// Give a special css for the date
+<font class=cc3>c1<font class=cc2>.</font>setStyle<font class=cc2>(</font></font><font class=cc6>"12/01/2003"</font><font class=cc2>,</font> <font class=cc6>"clsSuperDay"</font><font class=cc2>);</font> 
+</pre>
+
+<p class=cp10>Making certain items unavailable is not currently supported.</p>
+
+<p class=cp10><a name=#6></a><font class=cf4>Is it possible to use a small picture instead the ... button?</font></p>
+<p class=cp10>You can use style for the input tag. For example:</p>
+
+<pre class=cc1>
+<font class=cc4>&lt;<font class=cc3>input type=button style="width:150px;height:100px;background-image:url(book.gif)"</font>&gt;</font>
+</pre>
+
+<p class=cp10>You can also use an <font class=cc4>&lt;<font class=cc3>a</font>&gt;</font> tag with any image inside. See any HTML reference for details.</p>
+
+<p class=cp10><a name=#7></a><font class=cf4>Is it possible to set min/max date on the calendar?</font></p>
+<p class=cp10>An other thing, when you use the dropdown calendar in an iframe the calendar dissapires a couple of seconds after you click on the year/month selector.</p>
+<p class=cp10>I guess the calendar looses focus and goes invisible when the mouse is over one of the dropdown boxes.</p>
+<p class=cp10>You can use parameter yearrange when your calendar is in combobox style. For example:</p>
+
+<pre class=cc1>
+<font class=cc3>yearrange <font class=cc2>:</font> <font class=cc8>[</font><font class=cc4>1987</font><font class=cc2>,</font> <font class=cc4>2005</font><font class=cc8>]</font></font>
+</pre>
+
+<p class=cp10>Disappearing after loosing focus is behavior by design.</p>
+
+<p class=cp10><a name=#8></a><font class=cf4>I have a calendar, but I want that to choose some days, I can add to one cookie.</font></p>
+<p class=cp10>To save in cookie dates (selected by user) you can use setLink API of CodeThatPro. For example:</p>
+
+<pre class=cc1>
+<font class=cc3>c1<font class=cc2>.</font>setLink<font class=cc2>(</font></font><font class=cc6>"12/01/2003"</font><font class=cc2>,</font> <font class=cc6>"javascript:SaveToCookie('12/01/2003');"</font><font class=cc2>);</font>
+</pre>
+
+<p class=cp10>This code will save date 12/01/2003 to cookie if user has selected it.</p>
+<p class=cp10>Please note you have to implement SaveToCookie function.</p>
+
+<p class=cp10><a name=#9></a><font class=cf4>When I click on any of the buttons - nothing happens.....there is no movement nor is the selected date put in the text box - any ideas; Does the .js file need to be in the Scripts folder?</font></p>
+<p class=cp10>Possible cause is missing scripts. It's not nessesory for js to be in Scripts folder.</p>
+<p class=cp10>Js file should be visible from html files. See src parameter of the <font class=cc4>&lt;<font class=cc3>script</font>&gt;</font> tag in codethatcalndar.html and your html page.</p>
+
+<p class=cp10><a name=#10></a><font class=cf4>Is there a way to assign custom events as a reaction to selecting the particular date? Like user clicks on say Oct 15th and my custom code being executed?</font></p>
+<p class=cp10>Yes, it is possible with CalendarPro.</p>
+<p class=cp10>Here's sample</p>
+
+<pre class=cc1>
+// Set custom link, may be js-code
+<font class=cc3>c1<font class=cc2>.</font>setLink<font class=cc2>(</font></font><font class=cc6>"10/15/2003"</font><font class=cc2>,</font> <font class=cc6>"javascript:alert(\"My birthday!\");"</font><font class=cc2>);</font>
+// Set custom style
+<font class=cc3>c1<font class=cc2>.</font>setStyle<font class=cc2>(</font></font><font class=cc6>"09/02/2003"</font><font class=cc2>,</font> <font class=cc6>"clsSuperDay"</font><font class=cc2>);</font> 
+</pre>
+
+<p class=cp10>where c1 is an instance of CodeThatCaledar.</p>
+
+</td>
+</tr>
+<tr>
+<td><p class=cp8>&copy; <a class=ca2 href="">CodeThat.com</a>, 2003-2005<br>
+Design by <a class=ca2 href="http://www.xt-labs.com">XTLabs, Inc</a>.</p></td>
+</tr>
+</table></body></html>

@@ -1,0 +1,181 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<title>:: JavaScript calendar implemented in order to provide users with an easy yet visual way to select date and/or time in web forms and applications ::</title>
+<meta http-equiv="content-language" content=en>
+<meta name=robots content="INDEX, FOLLOW">
+<meta http-equiv=keywords content="javascript calendar, free, free javascript calendar, cross-browser, html, xml, css, date, time, form, web form">
+<meta http-equiv=description content="JavaScript calendar implemented in order to provide users with an easy yet visual way to select date and/or time in web forms and applications">
+<meta http-equiv=expires content="Mon, 01 Jan 1990 00:00:00 GMT">
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv=pragma content="no-cache">
+<meta name="revisit-after" content="1 day">
+<meta http-equiv="content-script-type" content="text/javascript">
+<link rel=stylesheet type="text/css" href="s.css">
+
+<script language=javascript src="own.js"></script></head>
+<body leftmargin=0 topmargin=0 marginwidth=0 marginheight=0 bgcolor=#FFFFFF>
+<table width=768 border=0 cellpadding=0 cellspacing=0>
+<tr>
+<td><div style="position:absolute;left:496;top:154;z-index:1"><img src="img/mm.gif" width=2 height=10></div><img src="img/s.gif" width=1 height=2></td>
+</tr><tr>
+<td><table width=768 height=42 border=0 cellpadding=0 cellspacing=0 class=ct13>
+	<tr>
+	<td><img src="img/s.gif" width=20 height=1></td>
+	<td valign=middle><p class=cp18><nobr><font class=ca8>User Manual <br><a href="../index.html" class="ca9"><font class="cf6">S</font>amples</a></font></nobr></p></td>
+	<td width=8%><img src="img/s.gif" width=1 height=1></td>
+	<td valign=middle><p class=cp18><a class=ca9 href="index.html"><font class=cf6>In</font>troduction</a></p>
+
+	<p class=cp18><nobr><a class=ca9 href="calendar_data.html"><font class=cf6>G</font>eneration from the DB</a></nobr></p></td>
+
+	<td width=14%><img src="img/s.gif" width=1 height=1></td>
+	<td valign=middle><p class=cp18><nobr><font class=ca8>On-line Builder</font></nobr></p></td>
+	<td width=8%><img src="img/s.gif" width=1 height=1></td>
+	<td valign=middle>
+	
+	<p class=cp18><a class=ca9 href="http://codethat.com/calendar/ctcalendarpro_builder.html"><font class=cf6>P</font>RO</a></p>
+
+
+	<p class=cp18><a class=ca9 href="../Builder/ctcalendarstd_builder.html"><font class=cf6>S</font>TD</a></p>
+
+	</td>
+	<td width=15%><img src="img/s.gif" width=1 height=1></td>
+	<td valign=middle><p class=cp18><nobr><a class=ca8 href="userguide.html"><font class=cf7>1</font>23Guide</a></nobr></p></td>
+	<td width=8%><img src="img/s.gif" width=1 height=1></td>
+
+	
+	<td valign=middle><p class=cp18><nobr><a class=ca8 href="http://codethat.com/sales.html"><font class=cf7>O</font>rder PRO <br>Now</a></nobr></p></td>	
+	<td width=8%><img src="img/s.gif" width=1 height=1></td>
+
+	
+	<td valign=middle><p class=cp18><nobr><a class=ca8 href="faq.html"><font class=cf7>F</font>AQ</a></nobr></p></td>
+	<td width=15%><img src="img/s.gif" width=1 height=1></td>
+	</tr>
+</table></td>
+</tr><tr>
+<td><img src="img/s.gif" width=1 height=2></td>
+</tr>
+<tr>
+<td class=ct12><table width=768 height=30 border=0 cellpadding=0 cellspacing=0>
+	<tr><td valign=middle><p class=cp9>CODETHATCALENDAR USER MANUAL</p></td></tr>
+</table></td>
+</tr><tr>
+<td>
+
+<p class=cp10><font class=cf5>CodeThatCalendar Generation from Database</font></p>
+<p class=cp10>In addition to wide range of useful features CodeThatCalendar allows you to generate calendar script from the database.</p>
+<p class=cp10>You can store there are your favorites dates that will be linked with calendar after its creation.</p>
+<p class=cp10>At the example below we use MySQL as database platform and PHP as web-script language. But you can choose your own favorite database platform and web-script language. Here we just try to show basic principles for database calendar generation.</p>
+<p class=cp10>First of all we create table - calendar_data and scripts. Table structure and data are listed below:</p>
+
+<pre class=cc1>
+<font class=cc3>create table calendar_data<font class=cc2>(</font>
+	id int not <font class=cc4>null</font> auto_increment primary key<font class=cc2>,</font>
+	date datetime not <font class=cc4>null</font><font class=cc2>,</font>
+	event varchar<font class=cc2>(</font><font class=cc4>255</font><font class=cc2>)</font>
+<font class=cc2>);</font>
+insert into calendar_data <font class=cc2>(</font>date<font class=cc2>,</font> event<font class=cc2>)</font> values <font class=cc2>(</font></font><font class=cc6>'09.08.2005'</font><font class=cc2>,</font> <font class=cc6>'Mam\'s birthday!'</font><font class=cc3><font class=cc2>);</font>
+insert into calendar_data <font class=cc2>(</font>date<font class=cc2>,</font> event<font class=cc2>)</font> values <font class=cc2>(</font></font><font class=cc6>'01.01.2005'</font><font class=cc2>,</font> <font class=cc6>'New Year!'</font><font class=cc3><font class=cc2>);</font>
+insert into calendar_data <font class=cc2>(</font>date<font class=cc2>,</font> event<font class=cc2>)</font> values <font class=cc2>(</font></font><font class=cc6>'25.12.2005'</font><font class=cc2>,</font> <font class=cc6>'Xmass!'</font><font class=cc2>);</font> 
+</pre>
+
+<p class=cp10>Of course, when you create your real CodeThatTree script, tables will contain more information.</p>
+<p class=cp10>Next step - we create <b>.php</b> script. Result of this script implementation is a string variable that contains complete code for set links:</p>
+
+<pre class=cc1>
+<font class=cc3><font class=cc5>function</font> get_events<font class=cc2>(</font>$calendar<font class=cc2>)</font> <font class=cc7>{</font>
+	$events <font class=cc2>=</font> array<font class=cc2>();</font>
+	$query <font class=cc2>=</font></font> <font class=cc6>"select * from calendar_data order by date"</font><font class=cc3><font class=cc2>;</font>
+	$res <font class=cc2>=</font> mysql_query<font class=cc2>(</font>$query<font class=cc2>)</font> or die<font class=cc2>(</font></font><font class=cc6>"Can't get data from database!"</font><font class=cc3><font class=cc2>);</font>
+	<font class=cc5>while</font> <font class=cc2>(</font>$rs <font class=cc2>=</font> mysql_fetch_array<font class=cc2>(</font>$res<font class=cc2>))</font> <font class=cc7>{</font>
+		$events<font class=cc8>[</font>date<font class=cc2>(</font></font><font class=cc6>'m/d/Y'</font><font class=cc3><font class=cc2>,</font> strtotime<font class=cc2>(</font>$rs<font class=cc8>[</font></font><font class=cc6>"date"</font><font class=cc3><font class=cc8>]</font><font class=cc2>))</font><font class=cc8>]</font> <font class=cc2>=</font> $rs<font class=cc8>[</font></font><font class=cc6>"event"</font><font class=cc3><font class=cc8>]</font><font class=cc2>;</font>
+	<font class=cc7>}</font><font class=cc2>;</font>
+	$eventshtml <font class=cc2>=</font></font> <font class=cc6>""</font><font class=cc3><font class=cc2>;</font>
+	foreach<font class=cc2>(</font>$events as $k <font class=cc2>=&gt;</font> $v<font class=cc2>)</font>
+		$eventshtml <font class=cc2>.=</font> <font class=cc6>"$calendar.setLink(\"$k\", 'javascript:alert(\"$v\");');\n"</font><font class=cc2>;</font>
+	return $eventshtml<font class=cc2>;</font></font> // linked events
+<font class=cc7>}</font><font class=cc2>;</font> 
+</pre>
+
+<p class=cp10>And <b>finally</b> we complete a web page for calendar script:</p>
+
+<pre class=cc1>
+<font class=cc4>&lt;php</font>
+<font class=cc3><font class=cc5>function</font> get_events<font class=cc2>(</font>$calendar<font class=cc2>)</font> <font class=cc7>{</font>
+	$events <font class=cc2>=</font> array<font class=cc2>();</font>
+	$query <font class=cc2>=</font></font> <font class=cc6>"select * from calendar_data order by date"</font><font class=cc3><font class=cc2>;</font>
+	$res <font class=cc2>=</font> mysql_query<font class=cc2>(</font>$query<font class=cc2>)</font> or die<font class=cc2>(</font></font><font class=cc6>"Can't get data from database!"</font><font class=cc3><font class=cc2>);</font>
+	<font class=cc5>while</font> <font class=cc2>(</font>$rs <font class=cc2>=</font> mysql_fetch_array<font class=cc2>(</font>$res<font class=cc2>))</font> <font class=cc7>{</font>
+		$events<font class=cc8>[</font>date<font class=cc2>(</font></font><font class=cc6>'m/d/Y'</font><font class=cc3><font class=cc2>,</font> strtotime<font class=cc2>(</font>$rs<font class=cc8>[</font></font><font class=cc6>"date"</font><font class=cc3><font class=cc8>]</font><font class=cc2>))</font><font class=cc8>]</font> <font class=cc2>=</font> $rs<font class=cc8>[</font></font><font class=cc6>"event"</font><font class=cc3><font class=cc8>]</font><font class=cc2>;</font>
+	<font class=cc7>}</font><font class=cc2>;</font>
+	$eventshtml <font class=cc2>=</font></font> <font class=cc6>""</font><font class=cc3><font class=cc2>;</font>
+	foreach<font class=cc2>(</font>$events as $k <font class=cc2>=&gt;</font> $v<font class=cc2>)</font>
+		$eventshtml <font class=cc2>.=</font> <font class=cc6>"$calendar.setLink(\"$k\", 'javascript:alert(\"$v\");');\n"</font><font class=cc2>;</font>
+	return $eventshtml<font class=cc2>;</font></font> // linked events
+<font class=cc7>}</font><font class=cc2>;</font>
+<font class=cc3>echo</font> <font class=cc6>'&lt;html&gt;&lt;head&gt;' <font class=cc2>.</font>
+	'&lt;link href="ctc.css" rel="stylesheet" type="text/css"&gt;' <font class=cc2>.</font>
+	'&lt;script language="javascript1.2" src="'</font> <font class=cc3><font class=cc2>.</font> site_url <font class=cc2>.</font></font> <font class=cc6>'codethatsdk.js"&gt;&lt;/script&gt;' <font class=cc2>.</font>
+	'&lt;script language="javascript1.2" src="'</font> <font class=cc3><font class=cc2>.</font> site_url <font class=cc2>.</font></font>
+	<font class=cc6>'script/codethatcalendarstd.js"&gt;&lt;/script&gt;' <font class=cc2>.</font>
+	'&lt;/head&gt;'</font><font class=cc2>;</font>
+<font class=cc4>?&gt;</font>
+<font class=cc4>&lt;</font><font class=cc3>script language="javascript1.2"</font><font class=cc4>&gt;
+&lt;!--</font>
+<font class=cc3><font class=cc5>var</font> caldef1 <font class=cc2>=</font> <font class=cc7>{</font>
+	firstday <font class=cc2>:</font> <font class=cc4>0</font><font class=cc2>,</font>
+	dtype <font class=cc2>:</font></font> <font class=cc6>'MM/dd/yyyy'</font><font class=cc3><font class=cc2>,</font>
+	width <font class=cc2>:</font> <font class=cc4>250</font><font class=cc2>,</font>
+	windoww <font class=cc2>:</font> <font class=cc4>300</font><font class=cc2>,</font>
+	windowh <font class=cc2>:</font> <font class=cc4>170</font><font class=cc2>,</font>
+	border_width <font class=cc2>:</font> <font class=cc4>0</font><font class=cc2>,</font>
+	border_color <font class=cc2>:</font></font> <font class=cc6>'#0000d3'</font><font class=cc3><font class=cc2>,</font>
+	dn_css <font class=cc2>:</font></font> <font class=cc6>'clsDayName'</font><font class=cc3><font class=cc2>,</font>
+	cd_css <font class=cc2>:</font></font> <font class=cc6>'clsCurrentDay'</font><font class=cc3><font class=cc2>,</font>
+	tw_css <font class=cc2>:</font></font> <font class=cc6>'clsCurrentWeek'</font><font class=cc2>,</font> // CSS for current week
+	<font class=cc3>wd_css <font class=cc2>:</font></font> <font class=cc6>'clsWorkDay'</font><font class=cc3><font class=cc2>,</font>
+	we_css <font class=cc2>:</font></font> <font class=cc6>'clsWeekEnd'</font><font class=cc3><font class=cc2>,</font>
+	wdom_css <font class=cc2>:</font></font> <font class=cc6>'clsWorkDayOtherMonth'</font><font class=cc3><font class=cc2>,</font>
+	weom_css <font class=cc2>:</font></font> <font class=cc6>'clsWeekEndOtherMonth'</font><font class=cc3><font class=cc2>,</font>
+	highlight_css <font class=cc2>:</font></font> <font class=cc6>'clsHighlight'</font><font class=cc3><font class=cc2>,</font>
+	headerstyle <font class=cc2>:</font> <font class=cc7>{</font>
+		type <font class=cc2>:</font></font> <font class=cc6>"buttons"</font><font class=cc3><font class=cc2>,</font>
+		css <font class=cc2>:</font></font> <font class=cc6>'clsHighlight'</font>
+	<font class=cc3><font class=cc7>}</font><font class=cc2>,</font>
+	monthnames <font class=cc2>:</font> <font class=cc8>[</font></font><font class=cc6>"January"</font><font class=cc2>,</font> <font class=cc6>"February"</font><font class=cc2>,</font> <font class=cc6>"March"</font><font class=cc2>,</font> <font class=cc6>"April"</font><font class=cc2>,</font> <font class=cc6>"May"</font><font class=cc2>,</font> <font class=cc6>"June"</font><font class=cc2>,</font>
+		<font class=cc6>"July"</font><font class=cc2>,</font> <font class=cc6>"August"</font><font class=cc2>,</font> <font class=cc6>"September"</font><font class=cc2>,</font> <font class=cc6>"October"</font><font class=cc2>,</font> <font class=cc6>"November"</font><font class=cc2>,</font> <font class=cc6>"December"</font><font class=cc3><font class=cc8>]</font><font class=cc2>,</font>
+	daynames <font class=cc2>:</font> <font class=cc8>[</font></font><font class=cc6>"Su"</font><font class=cc2>,</font> <font class=cc6>"Mo"</font><font class=cc2>,</font> <font class=cc6>"Tu"</font><font class=cc2>,</font> <font class=cc6>"We"</font><font class=cc2>,</font> <font class=cc6>"Th"</font><font class=cc2>,</font> <font class=cc6>"Fr"</font><font class=cc2>,</font> <font class=cc6>"Sa"</font><font class=cc3><font class=cc8>]</font><font class=cc2>,</font>
+	img_path <font class=cc2>:</font></font> <font class=cc6>'img/'</font><font class=cc3><font class=cc2>,</font>
+	template_path <font class=cc2>:</font></font> <font class=cc6>''</font>
+<font class=cc7>}</font><font class=cc2>;</font> 
+//-->
+<font class=cc4>&lt;</font><font class=cc5>/</font><font class=cc3>script</font><font class=cc4>&gt; 
+&lt;</font><font class=cc5>/</font><font class=cc3>head</font><font class=cc4>&gt;
+
+&lt;</font><font class=cc3>body bgcolor="#ffffff"</font><font class=cc4>&gt;
+  &lt;</font><font class=cc3>form</font><font class=cc4>&gt;
+    &lt;</font><font class=cc3>input type=text id=id1</font><font class=cc4>&gt;
+  &lt;</font><font class=cc5>/</font><font class=cc3>form</font><font class=cc4>&gt;
+
+&lt;</font><font class=cc3>script language="javascript1.2"</font><font class=cc4>&gt;
+&lt;!--</font>
+<font class=cc3><font class=cc5>var</font> c1 <font class=cc2>=</font> <font class=cc5>new</font> CodeThatCalendar<font class=cc2>(</font>caldef1<font class=cc2>);</font>
+<font class=cc4>&lt;?php</font> print<font class=cc2>(</font>get_events<font class=cc2>(</font></font><font class=cc6>"c1"</font><font class=cc3><font class=cc2>));</font> <font class=cc4>?&gt;</font>
+c1<font class=cc2>.</font>create<font class=cc2>(</font>document<font class=cc2>,</font></font> <font class=cc6>"id1"</font><font class=cc2>);</font> 
+//-->
+<font class=cc4>&lt;</font><font class=cc5>/</font><font class=cc3>script</font><font class=cc4>&gt;
+
+&lt;</font><font class=cc5>/</font><font class=cc3>body</font><font class=cc4>&gt;
+&lt;</font><font class=cc5>/</font><font class=cc3>html</font><font class=cc4>&gt;</font>
+</pre>
+
+<p class=cp10><font class=cf4>Example - Calendar Generation from the Database</font></p>
+<p class=cp10>You can see an example and complete code here - <a class=ca5 href="http://codethat.com/calendar/db_ex.html" onclick="return openWin(800,550,'http://codethat.com/calendar/db_ex.html')" target=_blank>Calendar Generation from the Database Example</a> [popup]</p>
+<p class=cp10><a class=ca7 href="standard_vs_pro.html#calendar">Read more about CodeThatCalendar&nbsp;&gt;&gt;</a></p>
+
+</td>
+</tr>
+<tr>
+<td><p class=cp8>&copy; <a class=ca2 href="">CodeThat.com</a>, 2003-2005<br>
+Design by <a class=ca2 href="http://www.xt-labs.com">XTLabs, Inc</a>.</p></td>
+</tr>
+</table></body></html>

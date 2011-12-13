@@ -1,0 +1,11 @@
+package prims;
+
+public class Node implements Comparable<T>{
+	String name;
+	int value;
+	public Node(int value, String name){
+		this.value = value;
+		this.name = name;
+	}
+	
+}

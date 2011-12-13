@@ -1,0 +1,180 @@
+Programming Editor Revisions.
+
+4.1.5
+Increased acceptable text file size for File>Open.
+Added warning message if Serial PIC Programmer software is already running when converting to assembler.
+Added AXe107 Rudolf datasheet and samples.
+Added AXE022 28X/40X protoboard datasheet.
+Added FPU001 uM-FPU coprocessor datasheet, samples and template.
+
+4.1.4
+Added some additional Italian and Finnish language messages.
+Corrected LF symbol name conflict in Datalogger Wizard.
+Corrected save issue upon shutdown.
+
+4.1.3
+Italian language module enabled.
+
+4.1.2
+Corrected bug in 16 gosub option of 18X/28X introduced in version 4.1.1
+
+4.1.1
+Extensively updated PICAXE manuals and Help menu.
+Debug window now appears in taskbar.
+Compiler now supports outpin variables.
+Corrected 16F84A/16F627 direct programming with Serial PIC programmer issue.
+Updated MRU operation so opened file moves to top of list.
+
+4.1.0
+Main PICAXE-08M release.
+Added stop/calibfreq/infrain2/infraout/tune/play messages to all compilers.
+Added symbol constant mathematics to all compilers.
+Added OR, ORNOT, AND, ANDNOT, XOR, XNOR keyword option in let statements (in addition to & ^ | etc).
+Added twos complement negation (let x = -y) option to let statement.
+Removed non-PICAXE keywords from PICAXE compilers (sensor, lcd, clear, line1, line2)
+The character ` now operates the same as character ' (comment marker) to ease copying from PDF files. 
+Added automated serial terminal open after download option (View>Options>Options).
+Flowchart stop cell now converts to stop command rather than end command.
+
+4.0.10
+Corrected Clear hardware bug on 18X/28X parts.
+Corrected flowchart simulation of XOR command.
+
+4.0.9
+Updated PICAXE-08M Tune Wizard.
+
+4.0.8
+Optimised PICAXE-08M Tune Wizard.
+Added infraout and infrain2 commands to PICAXE-08M driver.
+Added 10k character limit to terminal input buffer.
+Corrected flowchart simulation issue with setint command.
+Updated PIC programmer to support new 16F62xA, 16F6xx, 12F6xx parts
+
+4.0.7
+Beta development of PICAXE-08M Tune Wizard.
+Corrected writemem bug in PICAXE-28A driver.
+
+4.0.6
+Beta development of PICAXE-08M Tune Wizard.
+
+4.0.5
+Beta development of PICAXE-08M Tune Wizard.
+Updated PICAXE-08M driver.
+
+4.0.4
+Enabled PICAXE-08M option for beta testing.
+Enabled PICAXE-08M Tune Wizard for beta testing, including (RTTTL) import and export options.
+Prevented left and right alignment with Ctrl keys. Ctrl A shortcut is now Select All.
+Added setfreq command to PICAXE-18A command set.
+
+4.0.3
+Added 'Which help file?' help topic.
+Flowchart simulation of peek and read whilst using variable address corrected.
+Flowchart variable panel is now refreshed after a peek command.
+Assembler issue with long filenames in error file corrected.
+Updated 18 pin project board datasheet with circuit diagrams.
+Updated PICAXE08M and 08 drivers with readadc/readtemp illegal pin warnings.
+Updated PICAXE08 driver with play, tune command warnings.
+
+4.0.2
+Added option to select between RTF or ASCII text with BASIC files.
+(NB selecting ASCII mode will reduce screen highlighting 'flicker' on older slow computers).
+Revised PICAXE28X/40X mode selection and options.
+Edit>Select All menu added.
+Corrected bug with RTF colour editing.
+Updated Datalogger Wizard to reduce number of list items for computers with limited memory.
+Updated gosub information in basic commands datasheet.
+
+4.0.1
+Corrected SPE030 speech bug in Datalogger Wizard.
+Amended labels within Tune Wizard.
+Added firmware.txt information file.
+
+4.0.0
+Text Editor Useability:
+Text editor improved to include much enhanced (100 level) undo / redo.
+Text editor (BASIC) updated to include font, size, style, indent and colour options.
+Text editor (BASIC) files now saved and printed in RTF format (including formatting).
+Text editor find/replace routines enhanced.
+Text editor now displays current line number on toolbar.
+
+Flowchart Useability:
+Flowchart scroll-bars added.
+Flowchart quick zoom button added (left click in, right click out).
+Flowchart 'generic' BASIC cell added to 'output' and 'other' menus to enable any command to be entered. 
+Flowchart 'servo' and 'pwm' cells replaced by use of 'generic' cell.
+Flowchart 'let pins=' BASIC conversion now includes binary format number.
+Flowchart copy/paste duplication of (already used) sub cell bug corrected.
+Flowchart graphic sometimes resizing when switching between windows corrected. 
+Flowchart variable toolbar button tooltip corrected. 
+
+Part Support:
+Xpart symbol constant defintions can now use mathematical operators referenced to other constants.
+Xpart support of 16 or 256 gosub's (revised firmware PICAXE-28X/40X v7.4, PICAXE-18X v8.2).
+Development support of new PICAXE-08M mode (future product).
+Flowchart simulation of PICAXE-08M 'play' command added. 
+PICAXE-08M Tune Wizard added.
+PIC Programmer Driver updated for Crocodile Technology support for PICAXE-08M.
+Several datasheets updated.
+
+; Version 4 released.
+
+3.5.2
+Added print option to quick syntax checker <F1>.
+Corrected 'unknown firmware' issue on PICAXE-18X download (firmware v8.2).
+Added PICAXE Micro robot datasheets.
+
+3.5.1
+Added PICAXE-18X Datalogger Wizards and datasheets.
+
+3.5.0
+Main PICAXE-18X release.
+Updated datasheets with PICAXE-18X information.
+Updated debug window to allow PICAXE-18X frequency selection.
+Modified flowchart simulation when simulation delay set to 0 to prevent lockup on some machines.
+
+3.4.2
+Corrected some Finnish translation spelling errors.
+
+3.4.1
+Updated assembler mode PIC Programmer interface for non-FLASH PICs.
+
+3.4.0
+Finnish language module enabled.
+All driver files updated to give error messages when inappropriate X series commands used on non X parts.
+Basic to Assembler PIC16F819 (18 pin with ADC) option added.
+Datalink utility modified for simpler PICAXE use and added to PICAXE menu.
+PICAXE18/08 drivers updated to prevent accidental single bit overwrite when program exactly 128 bytes long.
+32k text 'undo' function limit increased.
+Updated flowchart sub function so can be re-added if previously deleted.
+
+3.3.4
+New assembler code MPASMWIN file included (v3.50 with better support for long filenames).
+Interface to MPASMWIN altered to better support long filenames. 
+Error message reported if path to MPASMWIN assembler file is greater than acceptable 62 characters.
+Alternate path to MPASMWIN now allowed via path setting in file network.ini
+Basic to Assembler bug with PIC12F629 option fixed.
+PIC Programmer Driver updated for Crocodile Technology support for A and X revision PICAXE.
+PIC Programmer Driver error message fix when wrong PIC type selected.
+
+3.3.3
+Extended maximum numbers of labels allowed in PICAXE18X / 28X listings.
+PIC Programmer calibration byte bug for PIC12C67x fixed.
+Basic to Assembler support of 'is on' syntax (rather than just '= 1') added.
+Basic to Assembler error message if use AND or OR in 'if...then' statements.
+Basic to Assembler conversion BASIC syntax error messages improved.
+
+3.3.2
+PICAXE-28A download bug introduced in 3.3.0 rectified.
+PICAXE-40X options added to 28X driver.
+
+3.3.1
+Resonator speed is automatically reset to 4MHz for modes without frequency option.
+
+3.3.0
+Main PICAXE-28X release.
+Added PICAXE-28X help files.
+Added new X command syntax to BASIC Commands help file. 
+
+pre-3.3.0
+Archived.

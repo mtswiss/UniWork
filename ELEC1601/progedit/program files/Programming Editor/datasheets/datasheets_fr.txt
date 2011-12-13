@@ -1,0 +1,69 @@
+
+[STAMP]
+Basic Commands Summary=axe001_basic_commands.pdf
+Flowchart Summary=axe001_flowcharts.pdf    
+Electronic Interfacing Circuits=axe001_pic_electronics.pdf
+Calibrating Analogue Sensors (BAS810)=bas810.pdf
+Programming PICs using a programmer=axe001_stamp2pic.pdf
+Electronic Symbols & Parts=symbols.pdf
+
+[ASSEMBLER]
+Converting BASIC into assembler code=axe001_bas2ass.pdf
+Assembler Code Summary=axe001_assembler.pdf
+PIC12F629 Datasheet=pic12f629.pdf
+PIC16F627 Datasheet=pic16f627.pdf
+PIC16F84A Datasheet=pic16f84a.pdf
+PIC16F872 Datasheet=pic16f872.pdf
+
+[PICAXE-08]
+PICAXE-08 Pinouts=axe001_pinout.pdf
+PICAXE-08 Manual=axe003_manual.pdf
+Basic Commands Summary=axe001_basic_commands.pdf
+Flowchart Summary=axe001_flowcharts.pdf
+Electronic Interfacing Circuits=axe001_pic_electronics.pdf
+PICAXE Frequently Asked Questions=axe001_faq.pdf
+Calibrating Analogue Sensors (BAS810)=bas810.pdf
+PICAXE Tutorial=axe002_tutorial.pdf
+PICAXE-08 Proto Board (AXE021)=axe021.pdf
+PICAXE-08 Motor Driver Board (AXE023)=axe023.pdf
+PICAXE-08 Project Board (CHI040)=chi040.pdf
+PICAXE-08 PCB Layouts=axe001_pcb.pdf
+Cyberpet Project (AXE101)=axe101.pdf
+Alarm Project (AXE102)=axe102.pdf
+Safety Light Project (AXE103)=axe103.pdf
+Electronic Dice Project (AXE105)=axe105.pdf
+Electronic Symbols & Parts=symbols.pdf
+
+[PICAXE-18]
+PICAXE-18 Pinouts=axe001_pinout.pdf
+PICAXE-18 Tutorial=axe002_tutorial.pdf
+PICAXE-18 Manual=axe002_manual.pdf
+Basic Commands Summary=axe001_basic_commands.pdf
+Flowchart Summary=axe001_flowcharts.pdf
+Electronic Interfacing Circuits=axe001_pic_electronics.pdf
+PICAXE Frequently Asked Questions=axe001_faq.pdf
+Calibrating Analogue Sensors (BAS810)=bas810.pdf
+PICAXE-18 Project Boards (CHI030/035)=chi030.pdf
+PICAXE-18 PCB Layouts=axe001_pcb.pdf
+Electronic Game Project (AXE104)=axe104.pdf
+Buggy Kit (CHI007)=chi007.pdf
+Keypad Kit (CHI008)=chi008.pdf
+Serial LCD/Clock Module (AXE033)=axe033.pdf
+Electronic Symbols & Parts=symbols.pdf
+
+
+[PICAXE-28]
+PICAXE-28 Pinouts=axe001_pinout.pdf
+PICAXE-28 Manual=axe001_manual.pdf
+Basic Commands Summary=axe001_basic_commands.pdf
+Flowchart Summary=axe001_flowcharts.pdf
+Electronic Interfacing Circuits=axe001_pic_electronics.pdf
+PICAXE Frequently Asked Questions=axe001_faq.pdf
+Calibrating Analogue Sensors (BAS810)=bas810.pdf
+PICAXE Tutorial=axe002_tutorial.pdf
+PICAXE-28 Project Board (AXE020)=axe020.pdf
+PICAXE-28 Servo Upgrade (AXE030)=axe030.pdf
+PICAXE-28 Infra-red Upgrade (AXE040)=axe040.pdf
+Serial LCD/Clock Module (AXE033)=axe033.pdf
+PICAXE-28 PCB Layouts=axe001_pcb.pdf
+Electronic Symbols & Parts=symbols.pdf

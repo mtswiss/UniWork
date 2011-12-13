@@ -1,0 +1,371 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<title>:: JavaScript calendar implemented in order to provide users with an easy yet visual way to select date and/or time in web forms and applications ::</title>
+<meta http-equiv="content-language" content=en>
+<meta name=robots content="INDEX, FOLLOW">
+<meta http-equiv=keywords content="javascript calendar, free, free javascript calendar, cross-browser, html, xml, css, date, time, form, web form">
+<meta http-equiv=description content="JavaScript calendar implemented in order to provide users with an easy yet visual way to select date and/or time in web forms and applications">
+<meta http-equiv=expires content="Mon, 01 Jan 1990 00:00:00 GMT">
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv=pragma content="no-cache">
+<meta name="revisit-after" content="1 day">
+<meta http-equiv="content-script-type" content="text/javascript">
+<link rel=stylesheet type="text/css" href="../Manual/s.css">
+
+<script language="javascript1.2" src="../Scripts/codethatcalendarstd.js"></script></head>
+<body leftmargin=0 topmargin=0 marginwidth=0 marginheight=0 bgcolor=#FFFFFF>
+<table width=768 border=0 cellpadding=0 cellspacing=0>
+<tr>
+<td><div style="position:absolute;left:496;top:154;z-index:1"><img src="img/mm.gif" width=2 height=10></div><img src="img/s.gif" width=1 height=2></td>
+</tr><tr>
+<td><table width=768 height=42 border=0 cellpadding=0 cellspacing=0  class=ct13>
+	<tr>
+	<td><img src="img/s.gif" width=20 height=1></td>
+	<td valign=middle><p class=cp18><nobr><font class=ca8>User Manual <br><a href="../index.html" class="ca9"><font class="cf6">S</font>amples</a></font></nobr></p></td>
+	<td width=8%><img src="img/s.gif" width=1 height=1></td>
+	<td valign=middle><p class=cp18><a class=ca9 href="../Manual/index.html"><font class=cf6>In</font>troduction</a></p>
+
+	<p class=cp18><nobr><a class=ca9 href="../Manual/calendar_data.html"><font class=cf6>G</font>eneration from the DB</a></nobr></p></td>
+
+	<td width=14%><img src="img/s.gif" width=1 height=1></td>
+	<td valign=middle><p class=cp18><nobr><font class=ca8>On-line Builder</font></nobr></p></td>
+	<td width=8%><img src="img/s.gif" width=1 height=1></td>
+	<td valign=middle>
+	
+	<p class=cp18><a class=ca9 href="http://codethat.com/calendar/ctcalendarpro_builder.html"><font class=cf6>P</font>RO</a></p>
+
+
+	<p class=cp18><a class=ca9 href="ctcalendarstd_builder.html"><font class=cf6>S</font>TD</a></p>
+
+	</td>
+	<td width=15%><img src="img/s.gif" width=1 height=1></td>
+	<td valign=middle><p class=cp18><nobr><a class=ca8 href="../Manual/userguide.html"><font class=cf7>1</font>23Guide</a></nobr></p></td>
+	<td width=8%><img src="img/s.gif" width=1 height=1></td>
+
+	
+	<td valign=middle><p class=cp18><nobr><a class=ca8 href="http://codethat.com/sales.html"><font class=cf7>O</font>rder PRO <br>Now</a></nobr></p></td>	
+	<td width=8%><img src="img/s.gif" width=1 height=1></td>
+
+	
+	<td valign=middle><p class=cp18><nobr><a class=ca8 href="../Manual/faq.html"><font class=cf7>F</font>AQ</a></nobr></p></td>
+	<td width=15%><img src="img/s.gif" width=1 height=1></td>
+	</tr>
+</table></td>
+</tr><script language="javascript1.2">
+<!--
+flag=false;
+
+function mkPath(ipath,frm) {
+	var p = frm.img_path.value;
+	if (p && p.charAt(p.length - 1) != '/') p += '/';
+		ipath = ipath.replace(/\\/g, '/');
+	return p+ipath.substr(ipath.lastIndexOf('/')+1)
+}
+
+function f_reset() {
+	flag = false;
+}
+			
+function ctcalendar_build(frm) {
+	if (!frm.width.value || frm.width.value<0) frm.width.value=250;
+	if (!frm.windoww.value || frm.windoww.value<0) frm.windoww.value=300;
+	if (!frm.windowh.value || frm.windowh.value<0) frm.windowh.value=200;
+	buttons=false;
+	if (frm.headerstyle_type.value=="buttons"){
+		buttons=true;
+		if (!frm.imgnextm || !frm.imgnextm.value)
+			f1="forward.jpg";
+		else
+			f1= frm.imgnextm.value;
+		if (!frm.imgprevm || !frm.imgprevm.value)
+			f2="back.jpg";
+		else
+			f2=frm.imgprevm.value;
+		if (!frm.imgnexty || !frm.imgnexty.value)
+			f3="forward.jpg";
+		else
+			f3=frm.imgnexty.value;
+		if (!frm.imgprevy || !frm.imgprevy.value)
+			f4="back.jpg";
+		else
+			f4=frm.imgprevy.value;
+	}
+	cause=false;
+	if (!frm.border_width.value || frm.border_width.value < 0) {
+		alert("insert the correct value");
+		cause=frm.border_width;
+	}
+	if (cause.focus) cause.focus();
+	s='<html>\n<head>\n<title>CodeThatCalendar</title>\n';
+	s+='<link href="'+frm.css_path.value+'" rel="stylesheet" type="text/css">\n';
+	s+='<script language="javascript" src="'+frm.script_path.value+'"></script>\n';
+	s+='<script language="javascript">\n';
+	s+='<!--\n';
+	s+='var params = {\n';
+	s+='\tfirstday:'+frm.firstday.value+',\n\tdtype:\'';
+	s+=frm.dtype.value +'\',\n\twidth:'+frm.width.value + ',\n\twindoww:'+frm.windoww.value;
+	s+=',\n\twindowh:' +frm.windowh.value+',\n\tborder_width:' +frm.border_width.value +',\n\t';
+	s+='border_color:\'';
+	if (frm.custom_border_color.value == "#")
+		s+=frm.border_color.value;
+	else
+		s+=frm.custom_border_color.value;
+	s+='\',\n\t';
+	s+='headerstyle: {\n\t\t';
+	s+='type:"' + frm.headerstyle_type.value+'",\n\t\tcss:\''+ frm.headerstyle_css.value+'\'';
+	if(buttons) {
+		if (frm.mode.value!="inline"){
+			s+=',\n\t\timgnextm:\''+mkPath(f1,frm) +'\',\n\t\timgprevm:\''+mkPath(f2,frm)+'\'';
+			if (frm.year_buttons.checked)
+				s+=',\n\t\timgnexty:\''+mkPath(f3,frm) +'\',\n\t\timgprevy:\''+mkPath(f4,frm)+'\'';
+		}
+	} else {
+		s+=',\n\t\tyearrange:[1987,2005]';
+	}
+	s+='\n\t},\n\t';
+	if (frm.time.checked)
+		s+='showtime:true,\n\t';
+	switch (frm.lang.value){
+		case "english": s+='monthnames:' +
+			'["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],\n\t' +
+			'daynames:["Su", "Mo", "Tu", "We", "Th", "Fr", "Sa"]\n};\n';
+			break;	
+		case "russian": s+='monthnames:' +
+			'["&#1071;&#1085;&#1074;&#1072;&#1088;&#1100;", "&#1060;&#1077;&#1074;&#1088;&#1072;&#1083;&#1100;", "&#1052;&#1072;&#1088;&#1090;", "&#1040;&#1087;&#1088;&#1077;&#1083;&#1100;", "&#1052;&#1072;&#1081;", "&#1048;&#1102;&#1085;&#1100;", "&#1048;&#1102;&#1083;&#1100;", "&#1040;&#1074;&#1075;&#1091;&#1089;&#1090;", "&#1057;&#1077;&#1085;&#1090;&#1103;&#1073;&#1088;&#1100;", "&#1054;&#1082;&#1090;&#1103;&#1073;&#1088;&#1100;", "&#1053;&#1086;&#1103;&#1073;&#1088;&#1100;", "&#1044;&#1077;&#1082;&#1072;&#1073;&#1088;&#1100;"],\n\t' +
+			'daynames:["&#1042;&#1089;", "&#1055;&#1085;", "&#1042;&#1090;", "&#1057;&#1088;", "&#1063;&#1074;", "&#1055;&#1090;", "&#1057;&#1073;"]\n};\n';
+			break;
+		case "german": s+='monthnames:' +
+			'["Januar", "Februar", "M&auml;rz", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"],\n\t' +
+			'daynames:["Mo", "Di", "Mi", "Do", "Fr", "Sa", "So"]\n};\n';
+			break;
+	}
+
+	s+='t=false;\n';
+	s+='function ie_ua(){\n\tt=ua;\n}\n';
+	s+='function show(id){\n\tvar c1 = new CodeThatCalendar(params);\n\t';
+	if (frm.mode.value=="normal") {
+		s+='c1.popup(id);\n}\n';
+	} else if (frm.mode.value=="iframe"){
+		s+='c1.innerpopup(id,\'calendar_frame\');\n}\n';
+	}
+	s+='//-->\n<\/script>\n<\/head>\n<body>\n\t<form>';
+	s+='\n\t\t<input name="id3">';
+	s+='\n\t\t<input type="button" onClick="show(\'id3\');" value="...">';
+	s+='\n\t</form>';
+	if (frm.mode.value=="iframe") {
+		s+='<script language="javascript">\n<!--\n';
+		s+='if ((typeof ua)!="undefined")\n\tie_ua();';
+		s+='if(t.oldOpera)\n\tdocument.write(\'<div id="calendar_div">\');';
+		s+='document.write(\'<iframe id="calendar_frame" name="calendar_frame"\');';
+		s+='document.write(\' frameborder="0" \');';
+		s+='document.write(\' scrolling="no" \');';
+		s+='document.write(\' style="visibility:hidden;" \');';
+		s+='if(t.oldOpera)\n\tdocument.write(\'src="codethatcalendar_ifr.html">\');\nelse\n\tdocument.write(\'>\');\n';
+		s+='document.write(\' </iframe>\');\n';
+		s+='if(t.oldOpera)\n\tdocument.write(\'</div>\');\n';
+		s+='if(t.moz)\n\tdocument.close();\n';
+		s+='//-->\n<\/script>\n';
+	}
+	s+='\n</body>\n</html>';
+	flag=true;
+	return s;
+}
+
+function preview(frm){
+	if (!flag && frm.result.value==""){
+		alert("no code built");
+		return;
+	} else {
+		var w = window.open('','codethatcalendar');
+		var d = w.document;
+		d.write(ctcalendar_build(frm));
+		if (ua.ie) w.location.reload();
+		w.focus();
+		if (frm.mode.value=="normal"&&ua.moz) d.close();
+	}
+}
+//-->
+</script>
+
+<tr>
+<td><img src="img/s.gif" width=1 height=2></td>
+</tr>
+<tr>
+<td class=ct12><table width=768 height=30 border=0 cellpadding=0 cellspacing=0>
+	<tr><td valign=middle><p class=cp9>CODETHATCALENDAR ONLINE BUILDER STANDARD</p></td></tr>
+</table></td>
+</tr><tr>
+<td>
+
+<p class=cp10>There is an online CodeThatCalendar Builder for STD version.</p>
+<p class=cp10>Fill an appropriate fields, then click 'Build script' button and paste code from the Result window to your web page.</p>
+<p class=cp10>To see the result at our web site click 'Preview' button.</p>
+<p class=cp10>You'll get CodeThatCalendar Builder for PRO version when purchase <a class=ca5 href="../Manual/sales.html">CodeThatCalendar PRO</a>.</p>
+<p class=cp10>In case you've only <a class=ca5 href="download_form.php?script=3">download Standard version</a> you're getting CodeThatCalendar Builder for STD version.</p>
+<p class=cp10>Please keep in mind - <font class=cf1>fields marked (*) are required</font>.</p>
+<p class=cp10><img src="img/pro.gif" width=24 height=11>&nbsp;Read <a class=ca5 href="standard_vs_pro.html#calendar">Standard vs PRO</a> to know the differences between CodeThatCalendar Standard and PRO.</p>
+<p class=cp10>Read <a class=ca5 href="../Manual/index.html">CodeThatCalendar User Manual</a> to learn more about CodeThatCalendar.</p>
+
+<p class=cp10><font class=cf5>Common Settings: Paths</font></p>
+
+<p class=cp10>You can't change standard paths at online version because at the other case script can't fine correct path and builder can't create correct html-code.</p>
+<p class=cp10>But at the offline version you should type at the fields bellow correct paths to CodeThatCalendar script.</p>
+<p class=cp10>Also you should specify path to Styles file (CSS) and Images directory.</p>
+
+</td>
+</tr>
+
+<form>
+
+<tr>
+<td align=left><table class=cv1>
+	<tr>
+	<th>CodeThatCalendar STD Script:</th>
+	<td><input class=ci3 name=script_path value="../Scripts/codethatcalendarstd.js" size=30 </td>
+	</tr><tr>
+	<th>Styles file (CSS):</th>
+	<td><input class=ci3 name=css_path value="ctc.css" size=30 </td>
+	</tr><tr>
+	<th>Images directory (on a website, required for code generation):</th>
+	<td><input class=ci3 name=img_path value="img/" size=30 </td>
+	</tr>
+</table></td>
+</tr>
+<tr>
+<td><p class=cp10><font class=cf5>Main Settings:</font></p></td>
+</tr>
+<tr>
+<td align=left><table class=cv1>
+	<tr>
+	<th>Mode</th>
+	<td colspan=2><select class=ci3 name=mode size=1>
+		<option value=normal selected>Normal</option>
+		<option value=iframe>Iframe</option>
+	</select></td>
+	</tr><tr>
+	<th>First day of the week</th>
+	<td colspan=2><select class=ci3 name=firstday size=1>
+		<option value=0 selected>Sunday</option>
+		<option value=1>Monday</option>
+		<option value=2>Tuesday</option>
+		<option value=3>Wednesday</option>
+		<option value=4>Thursday</option>
+		<option value=5>Friday</option>
+		<option value=6>Saturday</option>
+	</select></td>
+	</tr><tr>
+	<th>Output date format</th>
+	<td colspan=2><select class=ci3 name=dtype size=1>
+		<option value="MM/dd/yyyy" selected>MM/dd/yyyy</option>
+		<option value="dd/MM/yyyy">dd/MM/yyyy</option>
+		<option value="MM/dd/yy">MM/dd/yy</option>
+		<option value="dd/MM/yy">dd/MM/yy</option>
+		<option value="dd/MM">dd/MM</option>
+		<option value="MM/dd">MM/dd</option>
+	</select></td>
+	</tr><tr>
+	<th>Width of the calendar table</th>
+	<td><input class=ci3 name=width size=2 value=275></td>
+	<td>px</td>
+	</tr><tr>
+	<th>Width of the calendar window</th>
+	<td><input class=ci3 name=windoww size=2 value=300></td>
+	<td>px</td>
+	</tr><tr>
+	<th>Height of the calendar window</th>
+	<td><input class=ci3 name=windowh size=2 value=200></td>
+	<td>px</td>
+	</tr>
+</table></td>
+</tr>
+<tr>
+<td><p class=cp10><font class=cf5>Style Settings:</font></p></td>
+</tr>
+<tr>
+<td align=left><table class=cv1>
+	<tr>
+	<th>Border width</th>
+	<td><input class=ci3 name=border_width value=0 size=2></td>
+	<td>px</td>
+	</tr><tr>
+	<th>Border color (predefined)</th>
+	<td colspan=2><select class=ci3 name=border_color size=1>
+		<option value=White selected>White</option>
+		<option value=Black>Black</option>
+		<option value=Blue>Blue</option>
+		<option value=Brown>Brown</option>
+		<option value=Green>Green</option>
+		<option value=Gray>Gray</option>
+		<option value=Magenta>Magenta</option>
+		<option value=Orange>Orange</option>
+		<option value=Pink>Pink</option>
+		<option value=Red>Red</option>
+		<option value=Violet>Violet</option>
+		<option value=Yellow>Yellow</option>
+	</select></td>
+	</tr><tr>
+	<th>Custom Border color (HEX)</th>
+	<td colspan=2><input class=ci3 name=custom_border_color value=# size=20></td>
+	</tr>
+</table></td>
+</tr>
+<tr>
+<td>
+<p class=cp10><font class=cf5>Header Settings:</font></p>
+<p class=cp10>In case you choose 'Buttons' header type there will be buttons at the top to go to the next/previous month or year. Otherwise if you choose 'Comboboxes' you will change month and year by choosing value from an appropriate combobox.</p>
+</td>
+</tr>
+<tr>
+<td align=left><table class=cv1>
+	<tr>
+	<th>Header Type</th>
+	<td><select class=ci3 name=headerstyle_type size=1>
+		<option value=buttons selected>buttons</option>
+		<option value=comboboxes>comboboxes</option>
+	</select></td>
+	</tr><tr>
+	<th>CSS for header</th>
+	<td><input class=ci3 name=headerstyle_css size=20 value=clsDayName></td>
+	</tr><tr>
+	<th><label for=year_buttons>Create year buttons</label></th>
+	<td><input type=checkbox name=year_buttons id=year_buttons></td>
+	</tr><tr>
+	<th><label for=time>Show current time</label></th>
+	<td><input type=checkbox name=time id=time></td>
+	</tr>
+</table></td>
+</tr>
+<tr>
+<td>
+<p class=cp10><font class=cf5>Localization Settings:</font></p>
+<p class=cp10>Here you can choose a language for your calendar.</p>
+</td>
+</tr>
+<tr>
+<td align=left><table class=cv1>
+	<tr>
+	<th>Calendar language</th>
+	<td><select class=ci3 name=lang size=1>
+		<option value=english selected>English</option>
+		<option value=russian>Russian</option>
+		<option value=german>German</option>
+	</select></td>
+	</tr>
+</table></td>
+</tr>
+<tr>
+<td>
+
+<p class=cp10><font class=cf5>Build the Script:</font></p>
+<p class=cp10><input class=ci4 type=button value="build script" onclick="this.form.result.value=ctcalendar_build(this.form)">&nbsp;&nbsp;&nbsp;<input class=ci4 type=reset onclick="f_reset();"></p>
+<p class=cp10><textarea class=ci3 cols=90 rows=20 name=result></textarea></p>
+<p class=cp10><input class=ci4 type=button onclick="preview(this.form)" value=preview></p>
+
+</td>
+</tr>
+</form>
+<tr>
+<td><p class=cp8>&copy; <a class=ca2 href="">CodeThat.com</a>, 2003-2005<br>
+Design by <a class=ca2 href="http://www.xt-labs.com">XTLabs, Inc</a>.</p></td>
+</tr>
+</table></body></html>

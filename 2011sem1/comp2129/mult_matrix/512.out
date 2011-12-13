@@ -1,0 +1,33 @@
+setting up matrices ... done
+---- CPU -----
+[sys a] sec: 2 usec: 407633
+[sys b] sec: 1 usec: 809724
+[usr a] sec: 845 usec: 596449
+[usr b] sec: 0 usec: 376942
+sys: 1 usr: 845
+
+---- kernel1 -----
+[sys a] sec: 7 usec: 820811
+[sys b] sec: 2 usec: 407633
+[usr a] sec: 845 usec: 898403
+[usr b] sec: 845 usec: 596449
+sys: 5 usr: 0
+
+---- kernel2 -----
+[sys a] sec: 13 usec: 73012
+[sys b] sec: 7 usec: 820811
+[usr a] sec: 846 usec: 210356
+[usr b] sec: 845 usec: 898403
+sys: 6 usr: 1
+
+---- kernel3 -----
+[sys a] sec: 14 usec: 319823
+[sys b] sec: 13 usec: 73012
+[usr a] sec: 846 usec: 267347
+[usr b] sec: 846 usec: 210356
+sys: 1 usr: 0
+
+
+real    14m21.479s
+user    14m6.267s
+sys     0m14.801s

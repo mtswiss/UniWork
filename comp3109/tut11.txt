@@ -1,0 +1,27 @@
+Exercise 1
+Define a rule mother_of(Person, Child) that holds if Person is the mother of Child.
+
+mother_of(Person, Child):-
+female(Person),
+child_of(Child, Person).
+
+Exercise 2
+Define a rule mother(Person) that holds if Person is a mother.
+
+mother(Person):-
+female(Person),
+child_of(_,Person).	** "_" means anything can go here **
+
+Exercise 3
+Define a rule sibling(Person1, Person2) that holds if Person1 is a sibling Person2.
+
+sibling(Person1, Person2):-
+child_of(P1,X),
+child_of(P2,X),
+child_of(P1,Y),
+child_of(P2,Y),
+X\=Y.
+
+
+Exercise 4
+Who is divorced in the House of Windsor?

@@ -1,0 +1,34 @@
+gcc main.c pracquiz.c util.c -o pracquiz
+
+echo "something" > data1
+echo "UPPERCASE" > data2
+echo "lowercase" > data3
+echo "" > data4
+echo "a" > data5
+
+echo "3*" > result1
+echo "4" > result2
+echo "4" > result3
+echo "0" > result4
+echo "1*" > result5
+
+./ pracquiz < data1 > actual1
+./ pracquiz < data2 > actual2
+./ pracquiz < data3 > actual3
+./ pracquiz < data4 > actual4 
+./ pracquiz < data5 > actual5
+
+echo "compare test1 result..."
+diff result1 actual1
+echo "compare test2 result..."
+diff result2 actual2
+echo "compare test3 result..."
+diff result3 actual3
+echo "compare test4 result..."
+diff result4 actual4
+echo "compare test5 result..."
+diff result5 actual5
+
+
+rm data1 data2 data3 data4 data5 result1 result2 result3 result4 result5 
+rm actual1 actual2 actual3 actual4 actual5 

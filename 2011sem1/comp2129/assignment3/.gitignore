@@ -1,0 +1,3 @@
+*.o
+counter
+Makefile.depends

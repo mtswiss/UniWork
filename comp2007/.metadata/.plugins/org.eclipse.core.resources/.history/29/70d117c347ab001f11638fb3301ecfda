@@ -1,0 +1,36 @@
+package prims;
+
+import java.util.*;
+
+// http://cs.fit.edu/~ryan/java/programs/graph/Graph-java.html
+// http://cs.fit.edu/~ryan/java/programs/graph/Prims-java.html
+
+public class Prims {
+
+	 List<Node> nodes = new List<Node>();
+	
+	
+	public static void main(String[] args) {
+		
+	PriorityQueue<Node> Queue = new PriorityQueue<Node>();
+	
+	
+	
+	
+	while(!Queue.isEmpty()){
+		
+		
+		
+		
+		
+		
+	}
+		
+		
+
+	}
+
+	
+	
+	
+}

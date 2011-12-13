@@ -1,0 +1,22 @@
+package prims;
+
+import java.util.*;
+
+public class Prims {
+
+	
+	
+	public static void main(String[] args) {
+		
+	PriorityQueue<Node> Queue = new PriorityQueue<Node>();
+	
+		
+		
+		
+
+	}
+
+	
+	
+	
+}

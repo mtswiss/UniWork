@@ -1,0 +1,212 @@
+#include <assert.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+#include "dw.h"
+
+
+struct list *base;
+int player_doughnuts;
+int player_milkshakes;
+
+
+
+
+int
+main(void) {
+
+	struct list *base;			/* store root room from list */
+	struct list *ptr_in_list;	/* store ptr in list */
+	struct room *start_room;	/* store start room */
+	struct room *goal_room;		/* store goal room */
+	struct room *curr_room;		/* store current room */
+
+	int numRoom;
+	int numDoors;
+	char start[21]="";
+	char goal[21]="";
+	char move;
+	
+
+	/*scan number of rooms from input and check if valid */
+	scanf("\n%d", &numRooms);
+	if(numRooms<=0){
+		printf("\nerror");
+		return -1;
+	}
+	base = createRooms(numRooms);
+
+	/*scan number of doors from input and check if valid */
+	scanf("\n%d", &numDoors);
+	if(numDoors<=0){
+		printf("\nerror");
+		return -1;
+	}
+	createDoors(numDoors);
+
+	/* scan START and GOAL rooms */
+	scanf("\n%20s %20s",&start, &goal);
+	start_room = find_room(start);
+	goal_room = find_room(goal);
+	if(start_room == NULL || goal_room == NULL){
+		printf("\nerror");
+		return -1;
+	}
+
+
+	while(scanf("\n%c", &move)){
+			curr_room = command(move, current);
+			if(curr_room == NULL){
+				return -1;
+			}
+			else if(curr_room == goal){
+				printf("\nwon");
+				return 0;
+			}
+			else{
+				printf("\n %s %d %d %d %d", curr_room->name, current_room->num_doughnuts, current_room->num_milkshakes, player_doughnuts, player_milkshakes);
+			}
+	}
+
+	//delete_rooms(base);
+	return 0;
+}
+
+
+struct room * create_room(const char *room_name, const int doughnuts, const int milkshakes){
+	struct room *n = (struct room *)malloc(sizeof(struct room));
+	strcpy(n->name, room_name);
+	n->num_doughnuts = doughnuts;
+	n->num_milkshakes = milkshakes;
+	for(int i =0;i<4;i++){
+	n->doors[i]=NULL;
+	}
+	return n;
+}
+
+struct list * newList(struct room){
+	struct list *ptr = (struct list *)malloc(struct list);
+	ptr->room=room;
+	ptr->next=NULL;
+	return ptr;
+}
+
+struct list * createRooms(int rooms){
+	char room_name[21]="";
+	int doughnuts; 
+	int milkshakes;
+	struct list *base_to_return;
+	struct list *ptr;
+
+	for(int i=1;i<=numRooms;i++){
+		scan("\n%20s %d %d", room_name, &doughnuts, &milkshakes);
+		if(doughnuts<0 || milkshakes <0){
+			printf("\nerror");
+			return -1;
+		}
+
+		/* create room */
+		struct room *room_created = create_room(room_name, doughnuts, milkshakes);
+
+		/*check wheter name is unique with new ptr traversing list */
+		struct list *check_name = base;
+		while(check_name->next!=NULL){
+			if(room_created->name == check_name->room->name){
+				printf("\nerror");
+				return -1;
+			}
+			check_name = check_name->next;
+		}
+		
+		/* first line is set as base of new list */
+		if(i==1){
+			base_to_return = newList(room_created);
+			ptr = base_to_return;
+		}
+		/* otherwise create room and link it to ptr->next */
+		else{
+			ptr->next = newList(rooms_created);
+			ptr = ptr->next;
+		}
+	}
+	return base_to_return;
+}
+
+int createDoors(int doors, struct list * top){
+	char room_name[21]="";
+	char room_name2[21]="";
+	char direction;
+	struct list *ptr = top;
+	for(int i=1;i<=numDoors;i++){
+			scanf("\n%20s %c %20s", &room_name, &direction, &room_name2);
+
+			/* check for same room names */
+			if(room_name==room_name2){
+				printf("\nerror");
+				return -1;
+			}
+			struct *1st_room;
+			struct *2nd_room;
+
+			/* traverse the list to find the rooms */
+			while(ptr->next!=NULL){
+				if(ptr->room->name == room_name){
+					1st_room = ptr->room;
+				}
+				if(ptr->room->name == room_name2){
+					2nd_room = ptr->room;
+				}
+			}
+
+			if(direction == "L"){
+				if(room_1->doors[LEFT]!=NULL || room_2->doors[RIGHT]!=NULL){
+					printf("\nerror");
+					return -1;
+				}
+				else{
+					room_1->doors[LEFT]		= room_2;
+					room_2->doors[RIGHT]	= room_1;
+				}
+			}
+			else if(direction == "R"){
+				if(room_1->doors[RIGHT]!=NULL || room_2->doors[LEFT]!=NULL){
+					printf("\nerror");
+					return -1;
+				}
+				else{
+					room_1->doors[RIGHT]	= room_2;
+					room_2->doors[LEFT]		= room_1;
+				}
+			}
+			else if(direction == "U"){
+				if(room_1->doors[UP]!=NULL || room_2->doors[DOWN]!=NULL){
+					printf("\nerror");
+					return -1;
+				}
+				else{
+					room_1->doors[UP]		= room_2;
+					room_2->doors[DOWN]		= room_1;
+				}
+			}
+			else if(direction == "D"){
+				if(room_1->doors[DOWN]!=NULL || room_2->doors[UP]!=NULL){
+					printf("\nerror");
+					return -1;
+				}
+				else{
+					room_1->doors[DOWN]		= room_2;
+					room_2->doors[UP]		= room_1;
+				}
+			}
+			else{
+				printf("\nerror");
+				return -1;
+			}
+	}
+}
+
+struct room * command(char move, struct room *curr){
+	if(move=="G"){
+		if(player_doughnuts==3){
+			printf("\nlost");

@@ -1,0 +1,75 @@
+#include	<stdio.h>
+#include	<ctype.h>
+#include	<stdlib.h>
+#include	<string.h>
+
+
+
+typedef struct node 
+{
+	int x;
+	struct node *next;
+} Node;
+
+Node *createlist(void)
+{
+
+	Node	*root;
+	Node	*curr;
+
+	Node	*new;
+	int	*str, buffer;
+
+	root = (Node *)malloc(sizeof(Node));
+	root->next = NULL;
+
+	str = (int *)malloc(sizeof(int) * 5001);
+
+	while (fgetc(str)==1) 
+	{
+		buffer = (int )malloc(sizeof(int) * 1);
+		buffer=str[0];
+		curr = root;
+		new = (Node *)malloc(sizeof(Node));
+		new->x = buffer;
+		new->next = NULL;
+
+		while (curr->next != NULL) 
+		{
+			curr = curr->next;
+		}
+	
+		curr->next = new;
+		new->next = NULL;
+		str=(int *)malloc(sizeof(int) * 5001);
+	}
+	free(str);
+	return root->next;
+}
+
+void goThrough(Node * root)
+{
+	int counter=0;
+	int total=0;
+	int buffer;
+	while(root !=NULL)
+	{
+		buffer=root->x;
+		if(buffer>10)
+		{
+			counter=counter + buffer;
+			total++;
+		}
+		root=root->next;
+	}
+	print("%f", counter/total);	
+}			
+
+int main(void)
+{
+
+	Node *root = createlist();
+	goThrough(root);
+	return 0;
+
+}

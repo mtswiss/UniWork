@@ -1,0 +1,106 @@
+package prims;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Graph {
+
+	ArrayList<Node> nodes;
+	int[][] matrix;
+
+	// Add en edge between two nodes (represented by numbers
+	public void addEdge(int endpoint1, int endpoint2 ) {
+		nodes.get(endpoint1).edges.add(nodes.get(endpoint2));
+	}
+
+	public Graph() {
+		Scanner in = new Scanner(System.in);
+		int numberOfNodes = in.nextInt();
+		nodes = new ArrayList<Node>();
+		for (int i=0; i<numberOfNodes; i++) {
+			Node n = new Node(i);
+			nodes.add(n);
+		}
+		matrix = new int[numberOfNodes][numberOfNodes];
+		// Get each row of the adjacency matrix
+		for (int i=0; i<numberOfNodes; i++) {
+			// Get each column
+			for (int j=0; j<numberOfNodes; j++) {
+				int v = in.nextInt();
+				// If there is an edge, add one
+				if (v != 0) {
+					addEdge(i,j);
+					matrix[i][j] = v;
+				}
+			}
+		}
+		Dijkstra(this, nodes.get(0));
+		//System.out.println("The number of edges is " + numberOfEdges());
+	}
+
+	public int numberOfEdges() {
+		int count = 0;
+		for (Node n: nodes) {
+			for (Node e : n.edges) {
+				count ++;
+			}
+		}
+		return (count/2);
+	}
+
+	public static void main(String args[]) {
+		// To get around static 
+		Graph g = new Graph();
+
+		for (Node n : g.nodes) {
+			System.out.println(n.distance);
+		}
+	}
+	
+	public Node smallest(ArrayList<Node> Q) {
+		int smallest_value = Integer.MAX_VALUE;
+		Node small = null;
+		for (Node n: Q) {
+			if (n.distance <= smallest_value) {
+				smallest_value = n.distance;
+				small = n;
+			}
+		}
+		return small;
+	}
+
+	public void Dijkstra(Graph G, Node source)
+	{
+		for(Node n: nodes) {
+			n.distance=Integer.MAX_VALUE;
+		}
+
+		source.distance=0;
+
+		ArrayList<Node> Q = new ArrayList<Node>();
+		for (Node n : nodes) {
+			Q.add(n);
+		}
+
+		while(!Q.isEmpty())	{
+			Node small = smallest(Q);
+			if (small.distance == Integer.MAX_VALUE) {
+				break;
+			}
+			Q.remove(small);	
+
+
+			for(int v=0;v<small.edges.size();v++){
+				if((small.distance + edgeLength(small,nodes.get(v)))<small.edges.get(v).distance)
+					small.edges.get(v).distance= (small.distance + edgeLength(small,small.edges.get(v)));
+			}
+		}
+	}
+
+	public Integer edgeLength(Node a, Node b){
+		return matrix[a.num][b.num];
+	}
+
+
+
+}

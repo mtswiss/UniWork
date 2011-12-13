@@ -1,0 +1,10 @@
+gcc -W -Wall -pedantic -ansi Quiz.c
+Quiz<data1>res1
+Quiz<data2>res2
+Quiz<data3>res3
+echo "1"
+diff actual1 res1
+echo "2"
+diff actual2 res2
+echo "3"
+diff actual3 res3

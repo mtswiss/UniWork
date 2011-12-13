@@ -1,0 +1,94 @@
+
+[STAMP]
+Basic Commands Summary=axe001_basic_commands.pdf
+Flowchart Summary=axe001_flowcharts.pdf
+Electronic Interfacing Circuits=axe001_pic_electronics.pdf
+Calibrating Analogue Sensors (BAS810)=bas810.pdf
+Programming PICs using a programmer=axe001_stamp2pic.pdf
+Electronic Symbols & Parts=symbols.pdf
+
+[ASSEMBLER]
+Programming in assembler code=axe001_programmer.pdf
+Converting BASIC into assembler code=axe001_bas2ass.pdf
+Assembler mneumonics summary=axe001_assembler.pdf
+Programmer Summary=BAS800.pdf
+PIC12F629 Datasheet=12f629.pdf
+PIC12F683 Datasheet=12f683.pdf
+PIC16F627 Datasheet=16f627.pdf
+PIC16F84A Datasheet=16f84a.pdf
+PIC16F819 Datasheet=16f819.pdf
+PIC16F88  Datasheet=16f88.pdf
+PIC16F872 Datasheet=16f872.pdf
+PIC16F873 Datasheet=16f873.pdf
+
+[PICAXE-08]
+PICAXE Manual 1 - Getting Started=picaxe_manual1.pdf
+PICAXE Manual 2 - BASIC Commands=picaxe_manual2.pdf
+PICAXE Manual 3 - Interfacing Circuits=picaxe_manual3.pdf
+PICAXE Frequently Asked Questions=axe001_faq.pdf
+Calibrating Analogue Sensors (BAS810)=bas810.pdf
+PICAXE Tutorial=axe002_tutorial.pdf
+PICAXE-08 Proto Board (AXE021)=axe021.pdf
+PICAXE-08 Motor Driver Board (AXE023)=axe023.pdf
+PICAXE-08 Project Board (CHI040)=chi040.pdf
+PICAXE-08M Tune Wizard=axe003_music.pdf
+Cyberpet Project (AXE101)=axe101.pdf
+Alarm Project (AXE102)=axe102.pdf
+Safety Light Project (AXE103)=axe103.pdf
+Electronic Dice Project (AXE105)=axe105.pdf
+Rudolf Reindeer Project (AXE107)=axe107.pdf
+PICAXE PCB Layouts=axe001_pcb.pdf
+Electronic Symbols & Parts=symbols.pdf
+
+[PICAXE-18]
+PICAXE Manual 1 - Getting Started=picaxe_manual1.pdf
+PICAXE Manual 2 - BASIC Commands=picaxe_manual2.pdf
+PICAXE Manual 3 - Interfacing Circuits=picaxe_manual3.pdf
+PICAXE-18 Tutorial=axe002_tutorial.pdf
+PICAXE Frequently Asked Questions=axe001_faq.pdf
+PICAXE-18 Project Boards (CHI030/035)=chi030.pdf
+Micro-Robot (AXE120)=axe120.pdf
+Micro-Robot Line Follower (AXE122)=axe122.pdf
+PICAXE Servo Upgrade (AXE030)=axe030.pdf
+PICAXE Infra-red Upgrade (AXE040)=axe040.pdf
+Ultrasonic Range Sensor (SRF004)=srf004.pdf
+Electronic Game Project (AXE104)=axe104.pdf
+Simon Says Game (AXE106)=axe106.pdf
+Buggy Kit (CHI007)=chi007.pdf
+Keypad Kit (CHI008)=chi008.pdf
+Serial LCD/Clock Module (AXE033)=axe033.pdf
+Datalogger Module (AXE110)=axe110.pdf
+Datalink=axe110_datalink.pdf
+i2c Tutorial=axe110_i2c.pdf
+uM-FPU Maths Coprocessor=fpu001.pdf
+PICAXE PCB Layouts=axe001_pcb.pdf
+Electronic Symbols & Parts=symbols.pdf
+
+[PICAXE-28]
+PICAXE Manual 1 - Getting Started=picaxe_manual1.pdf
+PICAXE Manual 2 - BASIC Commands=picaxe_manual2.pdf
+PICAXE Manual 3 - Interfacing Circuits=picaxe_manual3.pdf
+PICAXE Frequently Asked Questions=axe001_faq.pdf
+PICAXE Tutorial=axe002_tutorial.pdf
+PICAXE-28 Project Board (AXE020)=axe020.pdf
+PICAXE-28/40 Proto Board (AXE022)=axe022.pdf
+PICAXE Servo Upgrade (AXE030)=axe030.pdf
+PICAXE Infra-red Upgrade (AXE040)=axe040.pdf
+Serial LCD/Clock Module (AXE033)=axe033.pdf
+Ultrasonic Range Sensor (SRF004)=srf004.pdf
+uM-FPU Maths Coprocessor=fpu001.pdf
+i2c Tutorial=axe110_i2c.pdf
+PICAXE PCB Layouts=axe001_pcb.pdf
+Electronic Symbols & Parts=symbols.pdf
+Calibrating Analogue Sensors (BAS810)=bas810.pdf
+
+[INFO]
+1 Starter Packs and Chips=flier_starter_pack.pdf
+2 Project Boards & Add-ons=flier_project_boards.pdf
+3 PICAXE-08 Project Kits=flier_PICAXE_kits.pdf
+4 PICAXE-18 Project Kits=flier_PICAXE_kits18.pdf
+5 PICAXE Micro-Robot=flier_microrobot.pdf
+6 PICAXE Classroom Models=flier_classroom.pdf
+7 PICAXE X parts & Datalogger=flier_picaxex.pdf
+8 PICAXE-08M=flier_picaxem.pdf
+9 PICAXE.net=flier_picaxenet.pdf

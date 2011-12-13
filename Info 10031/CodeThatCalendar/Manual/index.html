@@ -1,0 +1,331 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<title>:: JavaScript calendar implemented in order to provide users with an easy yet visual way to select date and/or time in web forms and applications ::</title>
+<meta http-equiv="content-language" content=en>
+<meta name=robots content="INDEX, FOLLOW">
+<meta http-equiv=keywords content="javascript calendar, free, free javascript calendar, cross-browser, html, xml, css, date, time, form, web form">
+<meta http-equiv=description content="JavaScript calendar implemented in order to provide users with an easy yet visual way to select date and/or time in web forms and applications">
+<meta http-equiv=expires content="Mon, 01 Jan 1990 00:00:00 GMT">
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv=pragma content="no-cache">
+<meta name="revisit-after" content="1 day">
+<meta http-equiv="content-script-type" content="text/javascript">
+<link rel=stylesheet type="text/css" href="s.css">
+
+<script language=javascript src="own.js"></script></head> <body leftmargin=0 
+topmargin=0 marginwidth=0 marginheight=0 bgcolor=#FFFFFF> <table width=768 
+border=0 cellpadding=0 cellspacing=0> <tr> <td><div 
+style="position:absolute;left:496;top:154;z-index:1"><img src="img/mm.gif" 
+width=2 height=10></div><img src="img/s.gif" width=1 height=2></td> </tr><tr> 
+<td><table width=768 height=42 border=0 cellpadding=0 cellspacing=0 class=ct13> 
+<tr> <td><img src="img/s.gif" width=20 height=1></td> <td valign=middle><p 
+class=cp18><nobr><font class=ca8>User Manual <br><a href="../index.html" 
+class="ca9"><font class="cf6">S</font>amples</a></font></nobr></p></td> <td 
+width=8%><img src="img/s.gif" width=1 height=1></td> <td valign=middle><p 
+class=cp18><a class=ca9 href="index.html"><font 
+class=cf6>In</font>troduction</a></p>
+
+	<p class=cp18><nobr><a class=ca9 href="calendar_data.html"><font class=cf6>G</font>eneration from the DB</a></nobr></p></td>
+
+	<td width=14%><img src="img/s.gif" width=1 height=1></td>
+	<td valign=middle><p class=cp18><nobr><font class=ca8>On-line Builder</font></nobr></p></td>
+	<td width=8%><img src="img/s.gif" width=1 height=1></td>
+	<td valign=middle>
+	
+	<p class=cp18><a class=ca9 href="http://codethat.com/calendar/ctcalendarpro_builder.html"><font class=cf6>P</font>RO</a></p>
+
+
+	<p class=cp18><a class=ca9 href="../Builder/ctcalendarstd_builder.html"><font class=cf6>S</font>TD</a></p>
+
+	</td>
+	<td width=15%><img src="img/s.gif" width=1 height=1></td>
+	<td valign=middle><p class=cp18><nobr><a class=ca8 href="userguide.html"><font class=cf7>1</font>23Guide</a></nobr></p></td>
+	<td width=8%><img src="img/s.gif" width=1 height=1></td>
+
+	
+	<td valign=middle><p class=cp18><nobr><a class=ca8 href="http://codethat.com/sales.html"><font class=cf7>O</font>rder PRO <br>Now</a></nobr></p></td>	
+	<td width=8%><img src="img/s.gif" width=1 height=1></td>
+
+	
+	<td valign=middle><p class=cp18><nobr><a class=ca8 href="faq.html"><font class=cf7>F</font>AQ</a></nobr></p></td>
+	<td width=15%><img src="img/s.gif" width=1 height=1></td>
+	</tr>
+</table></td>
+</tr><tr>
+<td><img src="img/s.gif" width=1 height=2></td>
+</tr>
+<tr>
+<td class=ct12><table width=768 height=30 border=0 cellpadding=0 cellspacing=0>
+	<tr><td valign=middle><p class=cp9>CODETHATCALENDAR USER MANUAL</p></td></tr>
+</table></td>
+</tr><tr>
+<td>
+
+<p class=cp10><font class=cf5>CodeThatCalendar Main Features</font></p>
+<p class=cp10>With CodeThatCalendar you can:</p>
+<p class=cp19><img src="img/ad.gif" width=11 height=7>define first day of the week</p>
+<p class=cp19><img src="img/ad.gif" width=11 height=7>define output date format</p>
+<p class=cp19><img src="img/ad.gif" width=11 height=7>define calendar size</p>
+<p class=cp19><img src="img/ad.gif" width=11 height=7>define calendar borders</p>
+<p class=cp19><img src="img/ad.gif" width=11 height=7>customize calendar's elements style by using CSS</p>
+<p class=cp19><img src="img/ad.gif" width=11 height=7>images in calendar buttons are supported</p>
+<p class=cp19><img src="img/ad.gif" width=11 height=7>customize calendar's header style: 'buttons' or 'comboboxes'</p>
+<p class=cp19><img src="img/ad.gif" width=11 height=7><a class=ca5 href="index.html#iframe">show calendar at the separate frame</a></p>
+
+<p class=cp19><img src="img/ad.gif" width=11 height=7><a class=ca5 href="index.html#opacity">set opacity for the calendar (PRO version only)</a></p>
+<p class=cp19><img src="img/ad.gif" width=11 height=7><a class=ca5 href="index.html#path">set a path for all calendar template files and images (PRO version only)</a></p>
+<p class=cp19><img src="img/ad.gif" width=11 height=7><a class=ca5 href="index.html#keyboard">navigate with keyboard (PRO version only)</a></p>
+<p class=cp19><img src="img/ad.gif" width=11 height=7><a class=ca5 href="index.html#multiple">select multiple dates (PRO version only)</a></p>
+
+<p class=cp10><font class=cf5>CodeThatCalendar Properties Are Described Below:</font></p>
+
+<pre class=cc1>
+<font class=cc3><font class=cc5>var</font> caldef1 <font class=cc2>=</font>
+<font class=cc7>{</font>
+	firstday <font class=cc2>:,</font></font> // First day of the week: 0 means Sunday, 1 means Monday, etc.
+	<font class=cc3>dtype <font class=cc2>:</font></font> <font class=cc6>' '</font><font class=cc2>,</font> // Output date format MM-month, dd-date, yyyy-year, HH-hours,
+	             // mm-minutes, ss-seconds
+	<font class=cc3>width <font class=cc2>:,</font></font> // Width of the calendar table
+	<font class=cc3>windoww <font class=cc2>:,</font></font> // Width of the calendar window
+	<font class=cc3>windowh <font class=cc2>:,</font></font> // Height of the calendar window
+	<font class=cc3>border_width <font class=cc2>:,</font></font> // Border of the table
+	<font class=cc3>border_color <font class=cc2>:</font></font> <font class=cc6>' '</font><font class=cc2>,</font> // Color of the border
+	<font class=cc3>multi <font class=cc2>:</font> boolean<font class=cc2>,</font></font> // Enables multiple dates selecting
+	<font class=cc3>spr <font class=cc2>:,</font></font> // Multiple dates separator
+	<font class=cc3>dn_css <font class=cc2>:</font></font> <font class=cc6>' '</font><font class=cc2>,</font> // CSS for week day names
+	<font class=cc3>cd_css <font class=cc2>:</font></font> <font class=cc6>' '</font><font class=cc2>,</font> // CSS for current day
+	<font class=cc3>tw_css <font class=cc2>:</font></font> <font class=cc6>' '</font><font class=cc2>,</font> // CSS for current week
+	<font class=cc3>wd_css <font class=cc2>:</font></font> <font class=cc6>' '</font><font class=cc2>,</font> // CSS for work days (this month)
+	<font class=cc3>we_css <font class=cc2>:</font></font> <font class=cc6>' '</font><font class=cc2>,</font> // CSS for weekend days (this month)
+	<font class=cc3>wdom_css <font class=cc2>:</font></font> <font class=cc6>' '</font><font class=cc2>,</font> // CSS for work days (other month)
+	<font class=cc3>weom_css <font class=cc2>:</font></font> <font class=cc6>' '</font><font class=cc2>,</font> // CSS for weekend days (other month)
+	<font class=cc3>wdomcw_css <font class=cc2>:</font></font> <font class=cc6>' '</font><font class=cc2>,</font> // CSS for work days (other month, current week)
+	<font class=cc3>weomcw_css <font class=cc2>:</font></font> <font class=cc6>' '</font><font class=cc2>,</font> // CSS for weekend days (other month, current week)
+	<font class=cc3>wecd_css <font class=cc2>:</font></font> <font class=cc6>' '</font><font class=cc2>,</font> // CSS for weekend days (current day)
+	<font class=cc3>wecw_css <font class=cc2>:</font></font> <font class=cc6>' '</font><font class=cc2>,</font> // CSS for weekend days (current week)
+	<font class=cc3>highlight_css <font class=cc2>:</font></font> <font class=cc6>' '</font> // CSS for high light dates
+	<font class=cc3>preview_css <font class=cc2>:</font></font> <font class=cc6>' '</font> // CSS for preview_area
+	<font class=cc3>time_css <font class=cc2>:</font></font> <font class=cc6>' '</font> // CSS for time area
+	<font class=cc3>imgapply <font class=cc2>:</font></font> <font class=cc6>' '</font><font class=cc2>,</font> // Image for apply button
+	<font class=cc3>headerstyle <font class=cc2>:</font>
+	<font class=cc7>{</font>
+		type <font class=cc2>:</font></font> <font class=cc6>' '</font><font class=cc2>,</font> // Type of the header may be: 'buttons' or 'comboboxes'
+		<font class=cc3>css <font class=cc2>:</font></font> <font class=cc6>' '</font><font class=cc2>,</font> // CSS for header
+		<font class=cc3>imgnextm <font class=cc2>:</font></font> <font class=cc6>' '</font><font class=cc2>,</font> // Image for next month button
+		<font class=cc3>imgprevm <font class=cc2>:</font></font> <font class=cc6>' '</font><font class=cc2>,</font> // Image for previous month button
+		<font class=cc3>imgnexty <font class=cc2>:</font></font> <font class=cc6>' '</font><font class=cc2>,</font> // Image for next year button
+		<font class=cc3>imgprevy <font class=cc2>:</font></font> <font class=cc6>' '</font> // Image for previous year button
+	<font class=cc7>}</font><font class=cc2>,</font>
+	// Array with month names
+	<font class=cc3>monthnames <font class=cc2>:</font> <font class=cc8>[</font></font><font class=cc6>"January"</font><font class=cc2>,</font> <font class=cc6>"February"</font><font class=cc2>,</font> <font class=cc6>"March"</font><font class=cc2>,</font> <font class=cc6>"April"</font><font class=cc2>,</font> <font class=cc6>"May"</font><font class=cc2>,</font> <font class=cc6>"June"</font><font class=cc2>,</font> <font class=cc6>"July"</font><font class=cc2>,</font>
+		<font class=cc6>"August"</font><font class=cc2>,</font> <font class=cc6>"September"</font><font class=cc2>,</font> <font class=cc6>"October"</font><font class=cc2>,</font> <font class=cc6>"November"</font><font class=cc2>,</font> <font class=cc6>"December"</font><font class=cc8>]</font><font class=cc2>,</font>
+	// Array with week day names
+	<font class=cc3>daynames <font class=cc2>:</font> <font class=cc8>[</font></font><font class=cc6>"Su"</font><font class=cc2>,</font> <font class=cc6>"Mo"</font><font class=cc2>,</font> <font class=cc6>"Tu"</font><font class=cc2>,</font> <font class=cc6>"We"</font><font class=cc2>,</font> <font class=cc6>"Th"</font><font class=cc2>,</font> <font class=cc6>"Fr"</font><font class=cc2>,</font> <font class=cc6>"Sa"</font><font class=cc8>]</font><font class=cc2>,</font>
+	// Array with comments
+	<font class=cc3>txt <font class=cc2>:</font> <font class=cc8>[</font></font><font class=cc6>"Previous year"</font><font class=cc2>,</font> <font class=cc6>"Previous month"</font><font class=cc2>,</font> <font class=cc6>"Next month"</font><font class=cc2>,</font> <font class=cc6>"Next year"</font><font class=cc2>,</font> <font class=cc6>"Apply"</font><font class=cc3><font class=cc8>]</font><font class=cc2>,</font>
+	preview <font class=cc2>:</font> boolean</font> //indicates is preview area shows
+<font class=cc7>}</font><font class=cc2>;</font> 
+</pre>
+
+<p class=cp10><font class=cf5>To Create and Run CodeThatCalendar Use Structure Like This:</font></p>
+
+<pre class=cc1>
+<font class=cc4>&lt;</font><font class=cc3>script language="javascript" src="../Scripts/codethatcalendar.js"</font><font class=cc4>&gt;</font><font class=cc4>&lt;</font><font class=cc5>/</font><font class=cc3>script</font><font class=cc4>&gt;
+&lt;</font><font class=cc3>script language="javascript1.2"</font><font class=cc4>&gt;
+&lt;!--</font>
+<font class=cc3><font class=cc5>var</font> caldef1 <font class=cc2>=</font>
+<font class=cc7>{</font>
+	firstday <font class=cc2>:</font> <font class=cc4>0</font><font class=cc2>,</font>
+	dtype <font class=cc2>:</font></font> <font class=cc6>'MM/dd/yyyy'</font><font class=cc3><font class=cc2>,</font>
+	width <font class=cc2>:</font> <font class=cc4>275</font><font class=cc2>,</font>
+	windoww <font class=cc2>:</font> <font class=cc4>300</font><font class=cc2>,</font>
+	windowh <font class=cc2>:</font> <font class=cc4>200</font><font class=cc2>,</font>
+	border_width <font class=cc2>:</font> <font class=cc4>0</font><font class=cc2>,</font>
+	border_color <font class=cc2>:</font></font> <font class=cc6>'White'</font><font class=cc3><font class=cc2>,</font>
+	multi <font class=cc2>:</font> <font class=cc4>true</font><font class=cc2>,</font>
+	spr <font class=cc2>:</font></font> <font class=cc6>'\r\n'</font><font class=cc3><font class=cc2>,</font>
+	dn_css <font class=cc2>:</font></font> <font class=cc6>'clsDayName'</font><font class=cc3><font class=cc2>,</font>
+	cd_css <font class=cc2>:</font></font> <font class=cc6>'clsCurrentDay'</font><font class=cc3><font class=cc2>,</font>
+	tw_css <font class=cc2>:</font></font> <font class=cc6>'clsCurrentWeek'</font><font class=cc3><font class=cc2>,</font>
+	wd_css <font class=cc2>:</font></font> <font class=cc6>'clsWorkDay'</font><font class=cc3><font class=cc2>,</font>
+	we_css <font class=cc2>:</font></font> <font class=cc6>'clsWeekEnd'</font><font class=cc3><font class=cc2>,</font>
+	wdom_css <font class=cc2>:</font></font> <font class=cc6>'clsWorkDayOtherMonth'</font><font class=cc3><font class=cc2>,</font>
+	weom_css <font class=cc2>:</font></font> <font class=cc6>'clsWeekEndOtherMonth'</font><font class=cc3><font class=cc2>,</font>
+	wdomcw_css <font class=cc2>:</font></font> <font class=cc6>'clsWorkDayOthMonthCurWeek'</font><font class=cc3><font class=cc2>,</font>
+	weomcw_css <font class=cc2>:</font></font> <font class=cc6>'clsWeekEndOthMonthCurWeek'</font><font class=cc3><font class=cc2>,</font>
+	wecd_css <font class=cc2>:</font></font> <font class=cc6>'clsWeekEndCurDay'</font><font class=cc3><font class=cc2>,</font>
+	wecw_css <font class=cc2>:</font></font> <font class=cc6>'clsWeekEndCurWeek'</font><font class=cc3><font class=cc2>,</font>
+	preview_css <font class=cc2>:</font></font> <font class=cc6>'clsPreview'</font><font class=cc3><font class=cc2>,</font>
+	highlight_css <font class=cc2>:</font></font> <font class=cc6>'clsHighLight'</font><font class=cc3><font class=cc2>,</font>
+	headerstyle <font class=cc2>:</font>
+	<font class=cc7>{</font>
+		type <font class=cc2>:</font></font> <font class=cc6>'buttons'</font><font class=cc3><font class=cc2>,</font>
+		css <font class=cc2>:</font></font> <font class=cc6>'clsDayName'</font><font class=cc3><font class=cc2>,</font>
+		imgnextm <font class=cc2>:</font></font> <font class=cc6>'img/forward.jpg'</font><font class=cc3><font class=cc2>,</font>
+		imgprevm <font class=cc2>:</font></font> <font class=cc6>'img/back.jpg'</font><font class=cc3><font class=cc2>,</font>
+		imgnexty <font class=cc2>:</font></font> <font class=cc6>'img/forward.jpg'</font><font class=cc3><font class=cc2>,</font>
+		imgprevy <font class=cc2>:</font></font> <font class=cc6>'img/back.jpg'</font>
+	<font class=cc3><font class=cc7>}</font><font class=cc2>,</font>
+	imgapply <font class=cc2>:</font></font> <font class=cc6>'img/apply.gif'</font><font class=cc3><font class=cc2>,</font>
+	preview <font class=cc2>:</font> <font class=cc4>true</font><font class=cc2>,</font>
+	monthnames <font class=cc2>:</font> <font class=cc8>[</font></font><font class=cc6>'January'</font><font class=cc2>,</font> <font class=cc6>'February'</font><font class=cc2>,</font> <font class=cc6>'March'</font><font class=cc2>,</font> <font class=cc6>'April'</font><font class=cc2>,</font> <font class=cc6>'May'</font><font class=cc2>,</font> <font class=cc6>'June'</font><font class=cc2>,</font> <font class=cc6>'July'</font><font class=cc2>,</font>
+		<font class=cc6>'August'</font><font class=cc2>,</font> <font class=cc6>'September'</font><font class=cc2>,</font> <font class=cc6>'October'</font><font class=cc2>,</font> <font class=cc6>'November'</font><font class=cc2>,</font> <font class=cc6>'December'</font><font class=cc3><font class=cc8>]</font><font class=cc2>,</font>
+	daynames <font class=cc2>:</font> <font class=cc8>[</font></font><font class=cc6>'Su'</font><font class=cc2>,</font> <font class=cc6>'Mo'</font><font class=cc2>,</font> <font class=cc6>'Tu'</font><font class=cc2>,</font> <font class=cc6>'We'</font><font class=cc2>,</font> <font class=cc6>'Th'</font><font class=cc2>,</font> <font class=cc6>'Fr'</font><font class=cc2>,</font> <font class=cc6>'Sa'</font><font class=cc3><font class=cc8>]</font><font class=cc2>,</font>
+	txt <font class=cc2>:</font> <font class=cc8>[</font></font><font class=cc6>'Previous year'</font><font class=cc2>,</font> <font class=cc6>'Previous month'</font><font class=cc2>,</font> <font class=cc6>'Next month'</font><font class=cc2>,</font> <font class=cc6>'Next year'</font><font class=cc2>,</font> <font class=cc6>'Apply'</font><font class=cc3><font class=cc8>]</font>
+<font class=cc7>}</font><font class=cc2>;</font>
+<font class=cc5>var</font> c1 <font class=cc2>=</font> <font class=cc5>new</font> CodeThatCalendar<font class=cc2>(</font>caldef1<font class=cc2>);</font></font> 
+//-->
+<font class=cc4>&lt;</font><font class=cc5>/</font><font class=cc3>script</font><font class=cc4>&gt;
+&lt;</font><font class=cc3>body</font><font class=cc4>&gt;	
+	&lt;</font><font class=cc3>P</font><font class=cc4>&gt;</font>Month+year scrollers<font class=cc4>&lt;</font><font class=cc5>/</font><font class=cc3>P</font><font class=cc4>&gt;
+	&lt;</font><font class=cc3>form</font><font class=cc4>&gt;
+		&lt;</font><font class=cc3>input name="id1" type="textarea"/</font><font class=cc4>&gt;
+		&lt;</font><font class=cc3>input type="button" onClick="c1.popup('id1');" value="..."/</font><font class=cc4>&gt;
+	&lt;</font><font class=cc5>/</font><font class=cc3>form</font><font class=cc4>&gt;
+&lt;</font><font class=cc5>/</font><font class=cc3>body</font><font class=cc4>&gt;</font>
+</pre>
+
+<p class=cp10><font class=cf5>CodeThatCalendar Examples</font></p>
+<p class=cp19><img src="img/ad.gif" width=11 height=7>You can create calendar with scroll buttons for years and monthes.</p>
+<p class=cp10>See an example and complete code here - <a class=ca5 href="scroller_ex.html" onclick="return openWin(800,550,'scroller_ex.html')" target=_blank>Month+Year scrollers example</a></p>
+<p class=cp19><img src="img/ad.gif" width=11 height=7>You can create calendar with comboboxes for years and monthes.</p>
+<p class=cp10>See an example and complete code here - <a class=ca5 href="box_ex.html" onclick="return openWin(800,550,'box_ex.html')" target=_blank>Month+Year comboboxes example</a></p>
+<p class=cp19><img src="img/ad.gif" width=11 height=7>You can create combined calendar with date and time controls.</p>
+<p class=cp10>See an example and complete code here - <a class=ca5 href="dt_ex.html" onclick="return openWin(800,550,'dt_ex.html')" target=_blank>Date and time example</a></p>
+<p class=cp19><img src="img/ad.gif" width=11 height=7>CodeThatCalendar has Russian and German localization.</p>
+<p class=cp10>See an example and complete code here - <a class=ca5 href="local_ex.html" onclick="return openWin(800,550,'local_ex.html')" target=_blank>Localization example</a></p>
+<p class=cp19><img src="img/ad.gif" width=11 height=7>You can built CodeThatCalendar in your page like static object.</p>
+<p class=cp10>See an example and complete code here - <a class=ca5 href="inline_ex.html" onclick="return openWin(800,550,'inline_ex.html')" target=_blank>Inline Calendar example</a></p>
+<p class=cp10><a name=#iframe></a><font class=cf5>CodeThatCalendar at the Separate Frame</font></p>
+<p class=cp10>Firstly you should define calendar by ordinary (see examples and code above on this page). Then build calendar in the frame by using code like this:</p>
+
+<pre class=cc1>
+<font class=cc4>&lt;</font><font class=cc3>body</font><font class=cc4>&gt;
+  &lt;</font><font class=cc3>P</font><font class=cc4>&gt;</font>Month+year scrollers<font class=cc4>&lt;</font><font class=cc5>/</font><font class=cc3>P</font><font class=cc4>&gt;
+  &lt;</font><font class=cc3>form</font><font class=cc4>&gt;
+    &lt;</font><font class=cc3>input name="id1" type="textarea"/</font><font class=cc4>&gt;
+    &lt;</font><font class=cc3>input type="button" onClick="c1.innerpopup('id1','calendar_frame');" value="..."/</font><font class=cc4>&gt;
+  &lt;</font><font class=cc5>/</font><font class=cc3>form</font><font class=cc4>&gt;
+
+&lt;</font><font class=cc3>script language="javascript1.2"</font><font class=cc4>&gt;
+&lt;!--</font>
+// Create iframe
+<font class=cc3><font class=cc5>if</font> <font class=cc2>(</font>ua<font class=cc2>.</font>oldOpera<font class=cc2>)</font>document<font class=cc2>.</font>write<font class=cc2>(</font></font><font class=cc6>"&lt;div id=\"calendar_div\"&gt;"</font><font class=cc3><font class=cc2>);</font>
+document<font class=cc2>.</font>write<font class=cc2>(</font></font><font class=cc6>"&lt;iframe id=\"calendar_frame\" name=\"calendar_frame\""</font><font class=cc3><font class=cc2>);</font>
+document<font class=cc2>.</font>write<font class=cc2>(</font></font><font class=cc6>" frameborder=\"0\""</font><font class=cc3><font class=cc2>);</font>
+document<font class=cc2>.</font>write<font class=cc2>(</font></font><font class=cc6>" scrolling=\"no\""</font><font class=cc3><font class=cc2>);</font>
+document<font class=cc2>.</font>write<font class=cc2>(</font></font><font class=cc6>" style=\"visibility:hidden;\""</font><font class=cc3><font class=cc2>);</font>
+<font class=cc5>if</font> <font class=cc2>(</font>ua<font class=cc2>.</font>oldOpera<font class=cc2>)</font>
+document<font class=cc2>.</font>write<font class=cc2>(</font></font><font class=cc6>" src=\"codethatcalendar.html\"&gt;"</font><font class=cc3><font class=cc2>);</font>
+document<font class=cc2>.</font>write<font class=cc2>(</font></font><font class=cc6>"&lt;/iframe&gt;"</font><font class=cc3><font class=cc2>);</font>
+<font class=cc5>if</font> <font class=cc2>(</font>ua<font class=cc2>.</font>oldOpera<font class=cc2>)</font>document<font class=cc2>.</font>write<font class=cc2>(</font></font><font class=cc6>"&lt;/div&gt;"</font><font class=cc2>);</font> 
+//-->
+<font class=cc4>&lt;</font><font class=cc5>/</font><font class=cc3>script</font><font class=cc4>&gt;
+&lt;</font><font class=cc5>/</font><font class=cc3>body</font><font class=cc4>&gt;</font>
+</pre>
+
+<p class=cp10><font class=cf4>CodeThatCalendar in the Frame Example</font></p>
+<p class=cp10>See an example here - <a class=ca5 href="iframe_ex.html" onclick="return openWin(800,550,'iframe_ex.html')" target=_blank>CodeThatCalendar in the frame example</a></p>
+<p class=cp10><a name=#opacity></a><font class=cf5>CodeThatCalendar Opacity</font></p>
+<p class=cp10>Inline and Iframe calendars can be transparent. If you don't use parameter 'opacity' you'll get common opaque calendar. Also you can set a position for these calendar types.</p>
+<p class=cp10>To set opasity and position for iframe calendar you can use a structure like this:</p>
+
+<pre class=cc1>
+<font class=cc3>document<font class=cc2>.</font>write<font class=cc2>(</font></font><font class=cc6>"style=\"filter:Alpha(Opacity=60);
+position:absolute; left:30; top:400;\""</font><font class=cc2>);</font> 
+</pre>
+
+<p class=cp10>To set opasity and position for inline calendar you can use a structure like this:</p>
+
+<pre class=cc1>
+<font class=cc3><font class=cc5>var</font> caldef1 <font class=cc2>=</font> <font class=cc7>{</font>
+	opacity <font class=cc2>:</font> <font class=cc4>75</font><font class=cc2>,</font>
+	position <font class=cc2>:</font> <font class=cc7>{</font></font>
+		<font class=cc6>"absolute"</font> <font class=cc2>:</font> <font class=cc4>true</font><font class=cc2>,</font> <font class=cc6>"x"</font> <font class=cc2>:</font> <font class=cc4>100</font><font class=cc2>,</font> <font class=cc6>"y"</font> <font class=cc2>:</font> <font class=cc4>0</font>
+	<font class=cc7>}</font>
+	<font class=cc2>...</font>
+</pre>
+
+<p class=cp10>To call inline calendar now you should use</p>
+
+<pre class=cc1>
+<font class=cc3>inline_create<font class=cc2>(</font>document<font class=cc2>,</font></font> <font class=cc6>"id"</font><font class=cc2>)</font>
+</pre>
+
+<p class=cp10>instead of</p>
+
+<pre class=cc1>
+<font class=cc3>create<font class=cc2>(</font>document<font class=cc2>,</font></font> <font class=cc6>"id"</font><font class=cc2>)</font>
+</pre>
+
+
+<p class=cp10><font class=cf4>CodeThatCalendar Opacity And Position Example</font></p>
+<p class=cp10>See an example and complete code here - <a class=ca5 href="http://codethat.com/calendar/opacity_ex.html" onclick="return openWin(800,550,'http://codethat.com/calendar/opacity_ex.html')" target=_blank>CodeThatCalendar opacity and position example</a></p>
+<p class=cp10><a name=#path></a><font class=cf5>CodeThatCalendar Path</font></p>
+<p class=cp10>Generally you need the following files for CodeThatCalendar work:</p>
+<p class=cp19><img src="img/ad.gif" width=11 height=7>codethatcalendarstd.js</p>
+<p class=cp19><img src="img/ad.gif" width=11 height=7>codethatcalendar.html</p>
+<p class=cp19><img src="img/ad.gif" width=11 height=7>.css file</p>
+<p class=cp19><img src="img/ad.gif" width=11 height=7>image files</p>
+<p class=cp10>You place a link to codethatcalendarpro.js at</p>
+
+<pre class=cc1>
+<font class=cc4>&lt;</font><font class=cc3>script language="javascript" src="../Scripts/codethatcalendarpro.js"</font><font class=cc4>&gt;</font><font class=cc4>&lt;</font><font class=cc5>/</font><font class=cc3>script</font><font class=cc4>&gt;</font>
+</pre>
+
+<p class=cp10>Path to the image files you place at the calendar config.</p>
+<p class=cp10>But these files - <i>codethatcalendar.html, .css-file</i> - should be placed to the current calendar folder.</p>
+<p class=cp10>In case you have several sections at you web site (each of them uses CodeThatCalendar) which are placed at the different folders you should use constant to specify a one path for all calendar copies:</p>
+
+<pre class=cc1>
+<font class=cc3><font class=cc2>...</font>
+template_path <font class=cc2>:</font></font> <font class=cc6>'calendar/'</font><font class=cc3><font class=cc2>,</font>
+img_path <font class=cc2>:</font></font> <font class=cc6>'img/'</font>
+</pre>
+
+<p class=cp10>template_path - for codethatcalendar.html, codethatcalendarpro.js, css-style file</p>
+<p class=cp10>img_path - for image files.</p>
+
+<p class=cp10><a name=keyboard></a><font class=cf5>CodeThatCalendar Keyboard Navigation</font></p>
+<p class=cp10>CodeThatCalendar supports keyboard now.</p>
+<p class=cp19><img src="img/ad.gif" width=11 height=7>Use <b>arrow keys</b> to choose day.</p>
+<p class=cp19><img src="img/ad.gif" width=11 height=7>Hold <b>Ctrl</b> or <b>Shift</b> or <b>Alt</b> and use <b>up or down arrow keys</b> to switch between years</p>
+<p class=cp19><img src="img/ad.gif" width=11 height=7>Hold <b>Ctrl</b> or <b>Shift</b> or <b>Alt</b> and use <b>left or right arrow keys</b> to switch between months</p>
+<p class=cp19><img src="img/ad.gif" width=11 height=7>Press <b>Space</b> to go to the current date</p>
+<p class=cp19><img src="img/ad.gif" width=11 height=7>Press <b>Enter</b> to choose date in calendar or <b>Ctrl</b> or <b>Shift</b> or <b>Alt</b> + <b>Enter</b> when you use multiple mode.</p>
+<p class=cp10><font class=cf4>Example - Using keyboard</font></p>
+<p class=cp10>You can see an example and complete code here - <a class=ca5 href="http://codethat.com/calendar/keyboard_ex.html" onclick="return openWin(800,550,'http://codethat.com/calendar/keyboard_ex.html')" target=_blank>Using keyboard Example</a> [popup]</p>
+<p class=cp10><font class=cf1>Note.</font> This feature wouldn't work in Opera and in inline variant of CodeThatCalendar</p>
+<p class=cp10><a name=multiple></a><font class=cf5>Multiple Mode</font></p>
+<p class=cp10>You can choose several dates from calendar and keep them in one form field at one time.</p>
+<p class=cp10>For use this feature you should enable multiple mode and set separator for dates that will use in form field as in example you see below.</p>
+
+<pre class=cc1>
+<font class=cc3><font class=cc5>var</font> calendarDef <font class=cc2>=</font> <font class=cc7>{</font>
+	<font class=cc2>...</font>
+	multi <font class=cc2>:</font> <font class=cc4>true</font><font class=cc2>,</font></font> //enable multiple mode
+	<font class=cc3>spr <font class=cc2>:</font></font> <font class=cc6>'\r\n'</font><font class=cc2>,</font> //set separator for dates in form field, by default carret return
+	<font class=cc2>...</font>
+<font class=cc7>}</font><font class=cc2>;</font> 
+</pre>
+
+<p class=cp10><font class=cf4>Example - Multiple mode</font></p>
+<p class=cp10>You can see an example and complete code here - <a class=ca5 href="http://codethat.com/calendar/multiple_ex.html" onclick="return openWin(800,550,'http://codethat.com/calendar/multiple_ex.html')" target=_blank>Multiple mode Example</a> [popup]</p>
+<p class=cp10><font class=cf5>Advanced Status Bar</font></p>
+<p class=cp10>Now when you put your mouse over any element of calendar you will see hint for it. Except that you can put user messages in status bar with help method setStatus(s) of calendar, s is message string.</p>
+
+<pre class=cc1>
+<font class=cc3><font class=cc5>var</font> c1 <font class=cc2>=</font> <font class=cc5>new</font> CodeThatCalendar<font class=cc2>(</font>caldef1<font class=cc2>);</font>
+c1<font class=cc2>.</font>create<font class=cc2>(</font>document<font class=cc2>,</font></font> <font class=cc6>"id1"</font><font class=cc3><font class=cc2>);</font>
+c1<font class=cc2>.</font>setStatus<font class=cc2>(</font></font><font class=cc6>"Choose date from calendar!"</font><font class=cc2>);</font> 
+</pre>
+
+<p class=cp10><a class=ca7 href="calendar_data.html">Read more about CodeThatCalendar&nbsp;&gt;&gt;</a></p>
+
+</td>
+</tr>
+<tr>
+<td><p class=cp8>&copy; <a class=ca2 href="">CodeThat.com</a>, 2003-2005<br>
+Design by <a class=ca2 href="http://www.xt-labs.com">XTLabs, Inc</a>.</p></td>
+</tr>
+</table></body></html>
