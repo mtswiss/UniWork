@@ -1,0 +1,109 @@
+F:\COMP3615\Editing_Tool__chen\Editing_Tool\bin\Debug\Editing_Tool.exe.config
+F:\COMP3615\Editing_Tool__chen\Editing_Tool\bin\Debug\Editing_Tool.exe
+F:\COMP3615\Editing_Tool__chen\Editing_Tool\bin\Debug\Editing_Tool.pdb
+F:\COMP3615\Editing_Tool__chen\Editing_Tool\obj\x86\Debug\ResolveAssemblyReference.cache
+F:\COMP3615\Editing_Tool__chen\Editing_Tool\obj\x86\Debug\Editing_Tool.Form1.resources
+F:\COMP3615\Editing_Tool__chen\Editing_Tool\obj\x86\Debug\Editing_Tool.Properties.Resources.resources
+F:\COMP3615\Editing_Tool__chen\Editing_Tool\obj\x86\Debug\GenerateResource.read.1.tlog
+F:\COMP3615\Editing_Tool__chen\Editing_Tool\obj\x86\Debug\GenerateResource.write.1.tlog
+F:\COMP3615\Editing_Tool__chen\Editing_Tool\obj\x86\Debug\Editing_Tool.exe
+F:\COMP3615\Editing_Tool__chen\Editing_Tool\obj\x86\Debug\Editing_Tool.pdb
+C:\Users\Kyo\Desktop\Project\Editing_Tool__chen\Editing_Tool\bin\Debug\Editing_Tool.exe.config
+C:\Users\Kyo\Desktop\Project\Editing_Tool__chen\Editing_Tool\obj\x86\Debug\Editing_Tool.exe
+C:\Users\Kyo\Desktop\Project\Editing_Tool__chen\Editing_Tool\obj\x86\Debug\Editing_Tool.pdb
+C:\Users\Kyo\Desktop\Project\Editing_Tool__chen\Editing_Tool\bin\Debug\Editing_Tool.exe
+C:\Users\Kyo\Desktop\Project\Editing_Tool__chen\Editing_Tool\bin\Debug\Editing_Tool.pdb
+C:\Users\Kyo\Desktop\Project\Editing_Tool__chen\Editing_Tool\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Kyo\Desktop\Project\Editing_Tool__chen\Editing_Tool\obj\x86\Debug\Editing_Tool.Form1.resources
+C:\Users\Kyo\Desktop\Project\Editing_Tool__chen\Editing_Tool\obj\x86\Debug\Editing_Tool.Properties.Resources.resources
+C:\Users\Kyo\Desktop\Project\Editing_Tool__chen\Editing_Tool\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Kyo\Desktop\Project\Editing_Tool__chen\Editing_Tool\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\groupc\Desktop\comp3615_11_c\Editing_Tool__chen\Editing_Tool\bin\Debug\Editing_Tool.exe.config
+C:\Documents and Settings\groupc\Desktop\comp3615_11_c\Editing_Tool__chen\Editing_Tool\obj\x86\Debug\Editing_Tool.exe
+C:\Documents and Settings\groupc\Desktop\comp3615_11_c\Editing_Tool__chen\Editing_Tool\obj\x86\Debug\Editing_Tool.pdb
+C:\Documents and Settings\groupc\Desktop\comp3615_11_c\Editing_Tool__chen\Editing_Tool\bin\Debug\Editing_Tool.exe
+C:\Documents and Settings\groupc\Desktop\comp3615_11_c\Editing_Tool__chen\Editing_Tool\bin\Debug\Editing_Tool.pdb
+C:\Documents and Settings\groupc\Desktop\comp3615_11_c\Editing_Tool__chen\Editing_Tool\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\groupc\Desktop\comp3615_11_c\Editing_Tool__chen\Editing_Tool\obj\x86\Debug\Editing_Tool.Form1.resources
+C:\Documents and Settings\groupc\Desktop\comp3615_11_c\Editing_Tool__chen\Editing_Tool\obj\x86\Debug\Editing_Tool.Properties.Resources.resources
+C:\Documents and Settings\groupc\Desktop\comp3615_11_c\Editing_Tool__chen\Editing_Tool\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\groupc\Desktop\comp3615_11_c\Editing_Tool__chen\Editing_Tool\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Jonathon Limited\Desktop\Project\Editing_Tool__chen\Editing_Tool\bin\Debug\Editing_Tool.exe.config
+C:\Users\Jonathon Limited\Desktop\Project\Editing_Tool__chen\Editing_Tool\obj\x86\Debug\Editing_Tool.exe
+C:\Users\Jonathon Limited\Desktop\Project\Editing_Tool__chen\Editing_Tool\obj\x86\Debug\Editing_Tool.pdb
+E:\comp3615_11_c\Editing_Tool__chen\Editing_Tool\bin\Debug\Editing_Tool.exe.config
+E:\comp3615_11_c\Editing_Tool__chen\Editing_Tool\obj\x86\Debug\Editing_Tool.exe
+E:\comp3615_11_c\Editing_Tool__chen\Editing_Tool\obj\x86\Debug\Editing_Tool.pdb
+E:\comp3615_11_c\Editing_Tool__chen\Editing_Tool\bin\Debug\Editing_Tool.exe
+E:\comp3615_11_c\Editing_Tool__chen\Editing_Tool\bin\Debug\Editing_Tool.pdb
+E:\comp3615_11_c\Editing_Tool__chen\Editing_Tool\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\comp3615_11_c\Editing_Tool__chen\Editing_Tool\obj\x86\Debug\Editing_Tool.Form1.resources
+E:\comp3615_11_c\Editing_Tool__chen\Editing_Tool\obj\x86\Debug\Editing_Tool.Properties.Resources.resources
+E:\comp3615_11_c\Editing_Tool__chen\Editing_Tool\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\comp3615_11_c\Editing_Tool__chen\Editing_Tool\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\comp3615_11_c\Editing_Tool__chen\Editing_Tool\bin\Debug\Editing_Tool.exe.config
+D:\comp3615_11_c\Editing_Tool__chen\Editing_Tool\obj\x86\Debug\Editing_Tool.exe
+D:\comp3615_11_c\Editing_Tool__chen\Editing_Tool\obj\x86\Debug\Editing_Tool.pdb
+D:\comp3615_11_c\Editing_Tool__chen\Editing_Tool\bin\Debug\Editing_Tool.exe
+D:\comp3615_11_c\Editing_Tool__chen\Editing_Tool\bin\Debug\Editing_Tool.pdb
+D:\comp3615_11_c\Editing_Tool__chen\Editing_Tool\bin\Debug\nunit.framework.dll
+D:\comp3615_11_c\Editing_Tool__chen\Editing_Tool\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\comp3615_11_c\Editing_Tool__chen\Editing_Tool\obj\x86\Debug\Editing_Tool.Form1.resources
+D:\comp3615_11_c\Editing_Tool__chen\Editing_Tool\obj\x86\Debug\Editing_Tool.Properties.Resources.resources
+D:\comp3615_11_c\Editing_Tool__chen\Editing_Tool\obj\x86\Debug\Editing_Tool.test.resources
+D:\comp3615_11_c\Editing_Tool__chen\Editing_Tool\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\comp3615_11_c\Editing_Tool__chen\Editing_Tool\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\comp3615_11_c\Unit_testing_Editing_Tool__chen\Editing_Tool\bin\Debug\Editing_Tool.exe.config
+D:\comp3615_11_c\Unit_testing_Editing_Tool__chen\Editing_Tool\obj\x86\Debug\Editing_Tool.exe
+D:\comp3615_11_c\Unit_testing_Editing_Tool__chen\Editing_Tool\bin\Debug\Editing_Tool.exe
+D:\comp3615_11_c\Unit_testing_Editing_Tool__chen\Editing_Tool\bin\Debug\Editing_Tool.pdb
+D:\comp3615_11_c\Unit_testing_Editing_Tool__chen\Editing_Tool\bin\Debug\nunit.framework.dll
+D:\comp3615_11_c\Unit_testing_Editing_Tool__chen\Editing_Tool\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\comp3615_11_c\Unit_testing_Editing_Tool__chen\Editing_Tool\obj\x86\Debug\Editing_Tool.Form1.resources
+D:\comp3615_11_c\Unit_testing_Editing_Tool__chen\Editing_Tool\obj\x86\Debug\Editing_Tool.Properties.Resources.resources
+D:\comp3615_11_c\Unit_testing_Editing_Tool__chen\Editing_Tool\obj\x86\Debug\Editing_Tool.test.resources
+D:\comp3615_11_c\Unit_testing_Editing_Tool__chen\Editing_Tool\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\comp3615_11_c\Unit_testing_Editing_Tool__chen\Editing_Tool\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\comp3615_11_c\Unit_testing_Editing_Tool__chen\Editing_Tool\obj\x86\Debug\Editing_Tool.pdb
+E:\comp3615_11_c\Unit_testing_Editing_Tool__chen\Editing_Tool\bin\Debug\Editing_Tool.exe.config
+E:\comp3615_11_c\Unit_testing_Editing_Tool__chen\Editing_Tool\obj\x86\Debug\Editing_Tool.exe
+E:\comp3615_11_c\Unit_testing_Editing_Tool__chen\Editing_Tool\obj\x86\Debug\Editing_Tool.pdb
+E:\comp3615_11_c\Unit_testing_Editing_Tool__chen\Editing_Tool\bin\Debug\Editing_Tool.exe
+E:\comp3615_11_c\Unit_testing_Editing_Tool__chen\Editing_Tool\bin\Debug\Editing_Tool.pdb
+E:\comp3615_11_c\Unit_testing_Editing_Tool__chen\Editing_Tool\bin\Debug\nunit.framework.dll
+E:\comp3615_11_c\Unit_testing_Editing_Tool__chen\Editing_Tool\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\comp3615_11_c\Unit_testing_Editing_Tool__chen\Editing_Tool\obj\x86\Debug\Editing_Tool.Form1.resources
+E:\comp3615_11_c\Unit_testing_Editing_Tool__chen\Editing_Tool\obj\x86\Debug\Editing_Tool.Properties.Resources.resources
+E:\comp3615_11_c\Unit_testing_Editing_Tool__chen\Editing_Tool\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\comp3615_11_c\Unit_testing_Editing_Tool__chen\Editing_Tool\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\SVN_COMP3615\Unit_testing_Editing_Tool__chen\Editing_Tool\bin\Debug\Editing_Tool.exe.config
+C:\SVN_COMP3615\Unit_testing_Editing_Tool__chen\Editing_Tool\obj\x86\Debug\Editing_Tool.exe
+C:\SVN_COMP3615\Unit_testing_Editing_Tool__chen\Editing_Tool\obj\x86\Debug\Editing_Tool.pdb
+C:\SVN_COMP3615\Unit_testing_Editing_Tool__chen\Editing_Tool\bin\Debug\Editing_Tool.exe
+C:\SVN_COMP3615\Unit_testing_Editing_Tool__chen\Editing_Tool\bin\Debug\Editing_Tool.pdb
+C:\SVN_COMP3615\Unit_testing_Editing_Tool__chen\Editing_Tool\bin\Debug\nunit.framework.dll
+C:\SVN_COMP3615\Unit_testing_Editing_Tool__chen\Editing_Tool\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\SVN_COMP3615\Unit_testing_Editing_Tool__chen\Editing_Tool\obj\x86\Debug\Editing_Tool.Form1.resources
+C:\SVN_COMP3615\Unit_testing_Editing_Tool__chen\Editing_Tool\obj\x86\Debug\Editing_Tool.Properties.Resources.resources
+C:\SVN_COMP3615\Unit_testing_Editing_Tool__chen\Editing_Tool\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\SVN_COMP3615\Unit_testing_Editing_Tool__chen\Editing_Tool\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\MT\Desktop\comp3615_11_c\Unit_testing_Editing_Tool__chen\Editing_Tool\bin\Debug\Editing_Tool.exe.config
+C:\Users\MT\Desktop\comp3615_11_c\Unit_testing_Editing_Tool__chen\Editing_Tool\obj\x86\Debug\Editing_Tool.exe
+C:\Users\MT\Desktop\comp3615_11_c\Unit_testing_Editing_Tool__chen\Editing_Tool\obj\x86\Debug\Editing_Tool.pdb
+\\vmware-host\Shared Folders\My Desktop\comp3615_11_cOLD\Unit_testing_Editing_Tool__chen\Editing_Tool\bin\Debug\Editing_Tool.exe.config
+\\vmware-host\Shared Folders\My Desktop\comp3615_11_cOLD\Unit_testing_Editing_Tool__chen\Editing_Tool\obj\x86\Debug\Editing_Tool.exe
+\\vmware-host\Shared Folders\My Desktop\comp3615_11_cOLD\Unit_testing_Editing_Tool__chen\Editing_Tool\obj\x86\Debug\Editing_Tool.pdb
+\\vmware-host\Shared Folders\My Desktop\comp3615_11_c\Unit_testing_Editing_Tool__chen\Editing_Tool\bin\Debug\Editing_Tool.exe.config
+\\vmware-host\Shared Folders\My Desktop\comp3615_11_c\Unit_testing_Editing_Tool__chen\Editing_Tool\obj\x86\Debug\Editing_Tool.exe
+\\vmware-host\Shared Folders\My Desktop\comp3615_11_c\Unit_testing_Editing_Tool__chen\Editing_Tool\obj\x86\Debug\Editing_Tool.pdb
+\\vmware-host\Shared Folders\My Desktop\comp3615_11_c\Unit_testing_Editing_Tool__chen\Editing_Tool\bin\Debug\Editing_Tool.exe
+\\vmware-host\Shared Folders\My Desktop\comp3615_11_c\Unit_testing_Editing_Tool__chen\Editing_Tool\bin\Debug\Editing_Tool.pdb
+\\vmware-host\Shared Folders\My Desktop\comp3615_11_c\Unit_testing_Editing_Tool__chen\Editing_Tool\bin\Debug\nunit.framework.dll
+\\vmware-host\Shared Folders\My Desktop\comp3615_11_c\Unit_testing_Editing_Tool__chen\Editing_Tool\obj\x86\Debug\ResolveAssemblyReference.cache
+\\vmware-host\Shared Folders\My Desktop\comp3615_11_c\Unit_testing_Editing_Tool__chen\Editing_Tool\obj\x86\Debug\Editing_Tool.Form1.resources
+\\vmware-host\Shared Folders\My Desktop\comp3615_11_c\Unit_testing_Editing_Tool__chen\Editing_Tool\obj\x86\Debug\Editing_Tool.Properties.Resources.resources
+\\vmware-host\Shared Folders\My Desktop\comp3615_11_c\Unit_testing_Editing_Tool__chen\Editing_Tool\obj\x86\Debug\GenerateResource.read.1.tlog
+\\vmware-host\Shared Folders\My Desktop\comp3615_11_c\Unit_testing_Editing_Tool__chen\Editing_Tool\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\mngu6920\Desktop\comp3615_11_c\Unit_testing_Editing_Tool__chen\Editing_Tool\bin\Debug\Editing_Tool.exe.config
+C:\Users\mngu6920\Desktop\comp3615_11_c\Unit_testing_Editing_Tool__chen\Editing_Tool\obj\x86\Debug\Editing_Tool.exe
+C:\Users\mngu6920\Desktop\comp3615_11_c\Unit_testing_Editing_Tool__chen\Editing_Tool\obj\x86\Debug\Editing_Tool.pdb

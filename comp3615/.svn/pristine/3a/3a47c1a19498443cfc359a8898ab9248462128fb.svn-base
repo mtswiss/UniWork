@@ -1,0 +1,128 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+	<head> 
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+		<title>Travelling Data Editing Tool</title>
+		
+		<script type="text/javascript" src="https://www.google.com/jsapi?key=ABQIAAAA25w9Rt-MfmlAuPAoXbPg0RQwJo2wZ8YGJ82I619k4LrhEVyKkRTcpgo_77YFmZXraNt40HUaPD3nwg"> </script>
+    		<script type="text/javascript">
+    		google.load('earth', '1');
+
+    		var ge = null;
+    
+    		function init() 
+		{
+    			google.earth.createInstance('map3d', initCallback, failureCallback);
+          	}
+
+    		function initCallback(pluginInstance)
+		{
+     			ge = pluginInstance;
+      			ge.getWindow().setVisibility(true);
+	       	window.external.JSInitSuccessCallback_(pluginInstance);
+    		}
+
+    		function failureCallback(error) 
+		{
+      			window.external.JSInitErrorCallback_(error);
+    		}
+
+
+		function JSmk(point)
+		{
+			google.earth.addEventListener(point, 'dblclick', 
+			function mark(event)
+			{	
+				event.preventDefault();
+				setTimeout(function() {
+    				window.external.JScallName(point);
+  				}, 0);
+			});
+		}
+
+		function mark(event)
+		{
+			var placemark = ge.createPlacemark('');
+			var point = ge.createPoint('');
+			point.setLatitude(event.getLatitude());
+			point.setLongitude(event.getLongitude());
+			placemark.setGeometry(point);
+
+			event.preventDefault();
+			setTimeout(function() {
+				window.external.CreatePoint(placemark);
+				}, 0);
+
+
+				
+			google.earth.removeEventListener(ge.getGlobe(),'dblclick',mark);
+		}
+		
+		function createRulerPoint(event)
+		{
+			var placemark = ge.createPlacemark('');
+			var point = ge.createPoint('');
+			point.setLatitude(event.getLatitude());
+			point.setLongitude(event.getLongitude());
+			placemark.setGeometry(point);			
+			
+			event.preventDefault();
+			setTimeout(function() { 
+				window.external.createRulerPoint(placemark, point);
+				}, 0);
+			//google.earth.addEventListener(ge.getGlobe(), 'dblclick', createRulerPoint);
+			
+		}
+					
+		
+		function JSct()
+		{
+			google.earth.addEventListener(ge.getGlobe(), 'dblclick', mark);
+		}
+		
+		function JSrulerPoint()
+		{
+			google.earth.addEventListener(ge.getGlobe(), 'dblclick', createRulerPoint);
+		}
+		
+		function JSrmCT()
+		{
+			google.earth.removeEventListener(ge.getGlobe(),'dblclick',createRulerPoint);
+		}
+
+		function JSbl(placemark, content)
+		{
+			google.earth.addEventListener(placemark, 'click', 
+			function mark(event)
+			{	
+				setTimeout(function() {
+  				var balloon = ge.createHtmlStringBalloon('');
+ 				balloon.setFeature(placemark);
+  				balloon.setContentString(content);
+  				ge.setBalloon(balloon);
+				}, 0);
+			});
+		}
+
+
+
+    	</script>
+    	<style type="text/css">
+    	html, body
+		{
+			margin: 0;
+			width: 100%;
+			height: 100%;
+    	}
+    	</style>
+  	</head>
+  		<body onload="init()">
+    			<div id="map3d" style="width: 100%; height: 100%;"></div>
+  		</body>
+</html>
+
+
+
+

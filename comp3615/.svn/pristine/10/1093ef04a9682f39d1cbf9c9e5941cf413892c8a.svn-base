@@ -1,0 +1,6 @@
+Person	Date	Trip	Distance	StartCord	FinishCord	StartTime	FinishTime	Speed
+1	3/4/5	3	8	9	12	90	32		23	92
+
+blablabla this is just a test line. We shouldn't be seeing any of this in the file.
+
+4	5	67	9	67	23	2	23		23	98

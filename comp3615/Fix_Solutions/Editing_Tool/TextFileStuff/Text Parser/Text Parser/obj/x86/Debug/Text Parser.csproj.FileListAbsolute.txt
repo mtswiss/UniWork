@@ -1,0 +1,36 @@
+C:\Users\Abhishek Datar\documents\visual studio 2010\Projects\Text Parser\Text Parser\bin\Debug\Text Parser.exe
+C:\Users\Abhishek Datar\documents\visual studio 2010\Projects\Text Parser\Text Parser\bin\Debug\Text Parser.pdb
+C:\Users\Abhishek Datar\documents\visual studio 2010\Projects\Text Parser\Text Parser\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Abhishek Datar\documents\visual studio 2010\Projects\Text Parser\Text Parser\obj\x86\Debug\Text_Parser.Viewer.resources
+C:\Users\Abhishek Datar\documents\visual studio 2010\Projects\Text Parser\Text Parser\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Abhishek Datar\documents\visual studio 2010\Projects\Text Parser\Text Parser\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Abhishek Datar\documents\visual studio 2010\Projects\Text Parser\Text Parser\obj\x86\Debug\Text Parser.exe
+C:\Users\Abhishek Datar\documents\visual studio 2010\Projects\Text Parser\Text Parser\obj\x86\Debug\Text Parser.pdb
+C:\Documents and Settings\pdat4074\Desktop\Text Parser\Text Parser\obj\x86\Debug\Text Parser.exe
+C:\Documents and Settings\pdat4074\Desktop\Text Parser\Text Parser\obj\x86\Debug\Text Parser.pdb
+C:\Documents and Settings\pdat4074\Desktop\Text Parser\Text Parser\bin\Debug\Text Parser.exe
+C:\Documents and Settings\pdat4074\Desktop\Text Parser\Text Parser\bin\Debug\Text Parser.pdb
+C:\Documents and Settings\pdat4074\Desktop\Text Parser\Text Parser\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\pdat4074\Desktop\Text Parser\Text Parser\obj\x86\Debug\Text_Parser.Viewer.resources
+C:\Documents and Settings\pdat4074\Desktop\Text Parser\Text Parser\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\pdat4074\Desktop\Text Parser\Text Parser\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Prathamesh Datar\Documents\Visual Studio 2010\Projects\Text Parser\Editing_Tool__chen\Editing_Tool\TextFileStuff\Text Parser\Text Parser\obj\x86\Debug\Text Parser.exe
+C:\Users\Prathamesh Datar\Documents\Visual Studio 2010\Projects\Text Parser\Editing_Tool__chen\Editing_Tool\TextFileStuff\Text Parser\Text Parser\obj\x86\Debug\Text Parser.pdb
+C:\Users\Prathamesh Datar\Documents\Visual Studio 2010\Projects\Text Parser\Editing_Tool__chen\Editing_Tool\TextFileStuff\Text Parser\Text Parser\bin\Debug\Text Parser.exe
+C:\Users\Prathamesh Datar\Documents\Visual Studio 2010\Projects\Text Parser\Editing_Tool__chen\Editing_Tool\TextFileStuff\Text Parser\Text Parser\bin\Debug\Text Parser.pdb
+C:\Users\Prathamesh Datar\Documents\Visual Studio 2010\Projects\Text Parser\Editing_Tool__chen\Editing_Tool\TextFileStuff\Text Parser\Text Parser\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Prathamesh Datar\Documents\Visual Studio 2010\Projects\Text Parser\Editing_Tool__chen\Editing_Tool\TextFileStuff\Text Parser\Text Parser\obj\x86\Debug\Text_Parser.Viewer.resources
+C:\Users\Prathamesh Datar\Documents\Visual Studio 2010\Projects\Text Parser\Editing_Tool__chen\Editing_Tool\TextFileStuff\Text Parser\Text Parser\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Prathamesh Datar\Documents\Visual Studio 2010\Projects\Text Parser\Editing_Tool__chen\Editing_Tool\TextFileStuff\Text Parser\Text Parser\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\groupc\Desktop\comp3615_11_c\Fix_Solutions\Editing_Tool\TextFileStuff\Text Parser\Text Parser\obj\x86\Debug\Text Parser.exe
+C:\Documents and Settings\groupc\Desktop\comp3615_11_c\Fix_Solutions\Editing_Tool\TextFileStuff\Text Parser\Text Parser\obj\x86\Debug\Text Parser.pdb
+C:\Users\Abhishek Datar\Desktop\Fix_Solutions\Editing_Tool\TextFileStuff\Text Parser\Text Parser\obj\x86\Debug\Text Parser.exe
+C:\Users\Abhishek Datar\Desktop\Fix_Solutions\Editing_Tool\TextFileStuff\Text Parser\Text Parser\obj\x86\Debug\Text Parser.pdb
+C:\Users\Abhishek Datar\Desktop\Fix_Solutions\Editing_Tool\TextFileStuff\Text Parser\Text Parser\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Abhishek Datar\Desktop\Fix_Solutions\Editing_Tool\TextFileStuff\Text Parser\Text Parser\obj\x86\Debug\Text_Parser.Viewer.resources
+C:\Users\Abhishek Datar\Desktop\Fix_Solutions\Editing_Tool\TextFileStuff\Text Parser\Text Parser\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Abhishek Datar\Desktop\Fix_Solutions\Editing_Tool\TextFileStuff\Text Parser\Text Parser\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Abhishek Datar\Desktop\Fix_Solutions\Editing_Tool\TextFileStuff\Text Parser\Text Parser\bin\Debug\Text Parser.exe
+C:\Users\Abhishek Datar\Desktop\Fix_Solutions\Editing_Tool\TextFileStuff\Text Parser\Text Parser\bin\Debug\Text Parser.pdb
+C:\Users\Abhishek Datar\Desktop\Google Earth Project\Editing_Tool\TextFileStuff\Text Parser\Text Parser\obj\x86\Debug\Text Parser.exe
+C:\Users\Abhishek Datar\Desktop\Google Earth Project\Editing_Tool\TextFileStuff\Text Parser\Text Parser\obj\x86\Debug\Text Parser.pdb
